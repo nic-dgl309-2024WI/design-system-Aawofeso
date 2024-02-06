@@ -9,14 +9,6 @@ html, body {
     background: blue;
 }
 
-.flex{
-    display: flex;
-    flex-flow: row wrap;
-    
-    justify-content: end;
-    align-content: space-between;
-    
-  }
 
   .list {
     width: auto;
@@ -24,6 +16,10 @@ html, body {
     margin: auto;
     align-items: center;
     list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-content: space-between;
     transition: all 0.5s ease;
     float: right;
     
@@ -108,13 +104,10 @@ html, body {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 10px;}
-  }
+    .sidenav {float: right;}
+
+}
 
   .op {
     font-size: 35px;
-  }
-
-  /* Hide the link that should open and close the topnav on small screens */
-.flex .icon {
-    display: none;
   }
