@@ -12,7 +12,7 @@ html, body {
 .flex{
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    
     justify-content: end;
     align-content: space-between;
     
@@ -22,6 +22,7 @@ html, body {
     width: auto;
     height: auto;
     margin: auto;
+    align-items: center;
     list-style: none;
     transition: all 0.5s ease;
     float: right;
@@ -62,6 +63,10 @@ html, body {
     
   }
 
+  a.active {
+    background-color: grey;
+  color: lightblue;
+  }
   /* The side navbar */
 .sidenav {
     height: 100%;
@@ -80,7 +85,7 @@ html, body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 15px;
-    color: white;
+    color: black;
     display: block;
     transition: 0.3s;
   }
@@ -107,4 +112,9 @@ html, body {
 
   .op {
     font-size: 35px;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+.flex .icon {
+    display: none;
   }
