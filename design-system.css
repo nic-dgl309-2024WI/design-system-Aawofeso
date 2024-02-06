@@ -56,3 +56,8 @@ html, body {
     color: inherit;
     outline: 0;
   }
+
+  a:hover{
+    color: lightblue;
+    
+  }
