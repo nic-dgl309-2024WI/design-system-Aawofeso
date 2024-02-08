@@ -11,28 +11,54 @@ html, body {
     height: 75px;
     background: grey;
     position: relative;
+    display: flex;
 }
 
-
-
-/*  styling about-me and demo site */
-  .navbar a {
+.col1 {
     width: auto;
     height: auto;
     margin: auto;
     align-items: center;
-    list-style: none;
     color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   display: block;
-    flex-flow: row wrap;
     justify-content: end;
     align-content: space-between;
     transition: all 0.5s ease;
-    float: right;
+    flex: 50%;
+    float: left;
+}
+
+
+/*  styling about-me and demo site */
+  .col2 a{
+    width: auto;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    color: white;
     
+    text-decoration: none;
+    display: block;
+    align-content: space-between;
+    transition: all 0.5s ease;
+    float: right;
+    flex: 50%;
+    
+    
+    
+}
+.col2 a li{
+    list-style: none;
+    font-size: 17px;  
+    padding: 14px 16px; 
+}
+
+.icon {
+    font-size: 25px;
+    padding: 10px 16px;
 }
 
 /*  setting the font size of about-me and demo site in the navbar 
