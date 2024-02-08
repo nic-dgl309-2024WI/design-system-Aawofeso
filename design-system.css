@@ -9,17 +9,24 @@ html, body {
 .navbar{
     width: 100%;
     height: 75px;
-    background: blue;
+    background: grey;
+    position: relative;
 }
 
+
+
 /*  styling about-me and demo site */
-  .list {
+  .navbar a {
     width: auto;
     height: auto;
     margin: auto;
     align-items: center;
     list-style: none;
-    display: flex;
+    color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
     flex-flow: row wrap;
     justify-content: end;
     align-content: space-between;
@@ -28,7 +35,7 @@ html, body {
     
 }
 
-/*  setting the font size of about-me and demo site in the navbar */
+/*  setting the font size of about-me and demo site in the navbar 
  .list li {
     width: auto;
     color: #fff;
@@ -38,9 +45,9 @@ html, body {
     transition: all 0.5s ease;
     text-align: center;
     
- }
+ } */
 
- /* styling design system  */
+ /* styling design system  
  .head {
     height: 20%;
     width: 10%;
@@ -51,7 +58,7 @@ html, body {
     font-size: medium;
     color: white;
   }
-
+ */
   /* Removing the underline effect in href  */
   a{
     text-decoration: none;
