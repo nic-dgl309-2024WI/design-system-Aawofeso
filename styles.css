@@ -1,9 +1,10 @@
 :root {
     --clr-primary: black;
-    --clr-secondary: darkgrey;
-    --clr-accent: darkgrey;
-    --clr-light: lightgrey;
+    --clr-secondary: #333333;;
+    --clr-accent: #0066CC;
+    --clr-light: #F0F0F0;
     --clr-white: white;
+    --clr-yellow: #FFFFCC;
   }
   
 

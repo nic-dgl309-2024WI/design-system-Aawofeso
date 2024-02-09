@@ -1,8 +1,20 @@
+:root {
+    --clr-primary: #000000;
+    --clr-white: #ffffff;
+    --clr-secondary: #333333;;
+    --clr-light: #F0F0F0;
+    --clr-accent: #0066CC;
+    --clr-yellow: #FFFFCC;
+  }
+  
+
+ 
+
 
 /*  styling html and body */
 html, body {
     height: 100%;
-    background: #fff;
+    background: var(--clr-white);
 }
 
 *{
@@ -15,7 +27,7 @@ html, body {
 .navbar{
     width: 100%;
     height: 75px;
-    background: grey;
+    background: var(--clr-accent);
     position: relative;
     display: flex;
 }
@@ -26,7 +38,7 @@ html, body {
     height: auto;
     margin: auto;
     align-items: center;
-    color: white;
+    color: var(--clr-yellow);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -45,7 +57,7 @@ html, body {
     height: auto;
     margin: auto;
     align-items: center;
-    color: white;
+    color: var(--clr-yellow);
     text-decoration: none;
     display: block;
     align-content: space-between;
@@ -78,8 +90,7 @@ html, body {
 
   /* Hovers over contents in the top navbar  */
   a:hover{
-    color: lightblue;
-    background-color: grey;
+    color: var(--clr-light);
     
   }
 
@@ -91,7 +102,7 @@ html, body {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #111; 
+    background-color: var(--clr-secondary); 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -102,14 +113,15 @@ html, body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: var(--clr-light);
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: var(--clr-primary);
+    background-color: var(--clr-white);
   }
   
   /* Position and style the close button (top right corner) */
