@@ -6,9 +6,13 @@
     --clr-accent: #0066CC;
     --clr-yellow: #FFFFCC;
   }
-  
+  @import "path/style.css";
 
- 
+  *{
+    margin: 0;
+    padding: 0;
+    border: auto;
+  }
 
 
 /*  styling html and body */
@@ -17,11 +21,7 @@ html, body {
     background: var(--clr-white);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    border: auto;
-}
+
 
 /*  Formatting navbar */
 .navbar{
