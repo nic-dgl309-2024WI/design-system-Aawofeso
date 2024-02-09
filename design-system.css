@@ -1,7 +1,7 @@
 :root {
     --clr-primary: #000000;
     --clr-white: #ffffff;
-    --clr-secondary: #333333;;
+    --clr-secondary: #333333;
     --clr-light: #F0F0F0;
     --clr-accent: #0066CC;
     --clr-yellow: #FFFFCC;
@@ -136,7 +136,36 @@ html, body {
   .ape {
     display: none;
   }
+
+  .clr-primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+  }
   
+  .clr-secondary {
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+  }
+
+  .clr-white {
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+  }
+
+  .clr-light {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+  }
+
+  .clr-accent {
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+  }
+
+  .clr-yellow {
+    background-color: var(--clr-yellow);
+    color: var(--clr-primary);
+  }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
    @media screen and (max-width: 600px) {
     .sidenav {padding-top: 15px;}
