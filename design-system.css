@@ -1,12 +1,5 @@
-:root {
-    --clr-primary: #000000;
-    --clr-white: #ffffff;
-    --clr-secondary: #333333;
-    --clr-light: #F0F0F0;
-    --clr-accent: #0066CC;
-    --clr-yellow: #FFFFCC;
-  }
-  @import "path/style.css";
+/*  used to import variables from another css file */
+  @import "styles.css";
 
   *{
     margin: 0;
