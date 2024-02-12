@@ -20,7 +20,7 @@ html, body {
 .navbar{
     width: 100%;
     height: 75px;
-    background: var(--clr-accent);
+    background: var(--clr-accent-100);
     position: relative;
     display: flex;
 }
@@ -83,7 +83,7 @@ html, body {
 
   /* Hovers over contents in the top navbar  */
   a:hover{
-    color: var(--clr-light);
+    color: var(--clr-secondary-200);
     
   }
 
@@ -95,7 +95,7 @@ html, body {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: var(--clr-secondary); 
+    background-color: var(--clr-secondary-100); 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -106,7 +106,7 @@ html, body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: var(--clr-light);
+    color: var(--clr-secondary-200);
     display: block;
     transition: 0.3s;
   }
@@ -126,6 +126,10 @@ html, body {
     margin-left: 50px;
   }
 
+  .active {
+    color: var(--clr-red);
+  }
+
   .ape {
     display: none;
   }
@@ -136,7 +140,7 @@ html, body {
   }
   
   .bg-secondary {
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-secondary-100);
     color: var(--clr-white);
   }
 
@@ -146,17 +150,21 @@ html, body {
   }
 
   .text-light {
-    background-color: var(--clr-light);
+    background-color: var(--clr-secondary-200);
     color: var(--clr-primary);
   }
 
   .bg-accent {
-    background-color: var(--clr-accent);
+    background-color: var(--clr-accent-100);
     color: var(--clr-primary);
   }
 
   .text-yellow {
     background-color: var(--clr-yellow);
+    color: var(--clr-primary);
+  }
+  .active-red{
+    background-color: var(--clr-red);
     color: var(--clr-primary);
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
