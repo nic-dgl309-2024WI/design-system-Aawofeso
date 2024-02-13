@@ -269,7 +269,27 @@ html, body {
   letter-spacing: var(--letter-spacing-body);
 }
 
+.typeface__calibri-head{
+  font-family: var(--font-family-head);
+  text-align: center;
+}
+.typeface__calibri--font{
+  text-align: center;
+  font-family: var(--font-family-head);
+  font-weight: var(--font-weight-body);
+  letter-spacing: var(--letter-spacing-type);
+}
 
+.typeface__cambria-head{
+  font-family: var(--font-family-body);
+  text-align: center;
+}
+.typeface__cambria--font{
+  text-align: center;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body);
+  letter-spacing: var(--letter-spacing-type);
+}
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
    @media screen and (max-width: 600px) {
