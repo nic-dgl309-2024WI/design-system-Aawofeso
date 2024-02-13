@@ -34,7 +34,7 @@ html, body {
   letter-spacing: var(--letter-spacing-head);
 }
 /*  Styling the index page/design system */
-.col1 {
+.navbar__col-logo {
     width: auto;
     height: auto;
     margin: auto;
@@ -52,7 +52,7 @@ html, body {
 
 
 /* Styling the contents in topnav  */
-  .col2 a{
+  .navbar__col-list a{
     width: auto;
     height: auto;
     margin: auto;
@@ -67,7 +67,7 @@ html, body {
 }
 
 /*  styling about-me and demo site */
-.col2 a li{
+.navbar__col-list a li{
     list-style: none;  
     padding: 14px 16px; 
 }
@@ -136,7 +136,7 @@ html, body {
     color: var(--clr-red);
   }
 
-  .ape {
+  .sidenav__mobile {
     display: none;
   }
 
