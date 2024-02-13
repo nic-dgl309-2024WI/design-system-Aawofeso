@@ -7,6 +7,15 @@
   --clr-accent: #0066CC;
   --clr-red: #FF0000;
   --clr-yellow: #FFFFCC;
+
+  --font-family-head: 'Calibri';
+  --font-family-body: 'Cambria';
+  --font-size-head: 30px;
+  --font-size-body: 18px;
+  --font-weight-head: bold;
+  --font-weight-body: 500;
+  --letter-spacing-head: 0.09em;
+  --letter-spacing-body: 0.02em;
 }
   
 

@@ -23,8 +23,16 @@ html, body {
     background: var(--clr-accent);
     position: relative;
     display: flex;
+    font-family: var(--font-family-head);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-head);
+    letter-spacing: var(--letter-spacing-body);
 }
 
+.head{
+  font-size: var(--font-size-head);
+  letter-spacing: var(--letter-spacing-head);
+}
 /*  Styling the index page/design system */
 .col1 {
     width: auto;
@@ -34,7 +42,6 @@ html, body {
     color: var(--clr-yellow);
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
   display: block;
     justify-content: end;
     align-content: space-between;
@@ -61,8 +68,7 @@ html, body {
 
 /*  styling about-me and demo site */
 .col2 a li{
-    list-style: none;
-    font-size: 17px;  
+    list-style: none;  
     padding: 14px 16px; 
 }
 
@@ -257,6 +263,10 @@ html, body {
 #main {
   transition: margin-left .5s;
   padding: 5px;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  letter-spacing: var(--letter-spacing-body);
 }
 
 
