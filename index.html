@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="design-system.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="design-system.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Design-system</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Creating the top navbar -->
     <div class="navbar u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
         <div class="navbar__col-logo">
@@ -32,9 +34,23 @@
                 <a href="#"><li>Demo Site</li></a>
             </ul>
         </div>
+    <div class="navbar">
+      <div class="navbar__col-logo">
+        <h4 class="head active"><a href="index.html">Design System</a></h4>
+      </div>
+      <div class="navbar__col-list">
+        <ul class="col__list">
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="about-me.html"><li>About Me</li></a>
+          <a href="#"><li>Demo Site</li></a>
+        </ul>
+      </div>
 
-        <!-- Creating the sidenav -->
-        <div id="mySidenav" class="sidenav">
+         <!-- Creating the sidenav -->
+         <div id="mySidenav" class="sidenav">
 
             <br><br><br>
             <!-- showing the topnav links in the mobile version -->
@@ -43,13 +59,15 @@
                 <a href="#"><li>Demo Site</li></a><br><br>
             </div>
 
-            <!-- Close button function -->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-           <!-- Adding contents to sidenav -->
+        <!-- Close button function -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <!-- Adding contents to sidenav -->
         <ul class="sidenav__list">
           <a href="#"><strong>Branding</strong></a>
           <a href="colours.html"><li>Colours</li></a>
-          <a href="typography.html"><li>Typography</li></a>
+          <a href="typography.html"><li class="active">Typography</li></a>
           <a href="#"><li>Logo</li></a>
           </ul><br>
           <ul class="sidenav__list">
@@ -85,9 +103,7 @@
   </div>
   <div id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 ">
 
-  </div>
-   
-      <!-- Adding javascript to index -->
-      <script src="script.mjs"></script>
-</body>
+    <!-- Adding javascript to index -->
+    <script src="script.mjs"></script>
+  </body>
 </html>
