@@ -1,243 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="design-system.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="design-system.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Design-system</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Creating the top navbar -->
     <div class="navbar">
-        <div class="navbar__col-logo">
+      <div class="navbar__col-logo">
         <h4 class="head"><a href="index.html">Design System</a></h4>
+      </div>
+      <div class="navbar__col-list">
+        <ul class="col__list">
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="about-me.html"><li>About Me</li></a>
+          <a href="#"><li>Demo Site</li></a>
+        </ul>
+      </div>
+
+      <!-- Creating the sidenav -->
+      <div id="mySidenav" class="sidenav">
+        <br /><br /><br />
+        <!-- showing the topnav links in the mobile version -->
+        <div class="sidenav__mobile">
+          <a href="about-me.html"><li>About Me</li></a>
+          <a href="#"><li>Demo Site</li></a><br /><br />
         </div>
-        <div class="navbar__col-list">
-            <ul class="col__list">
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-                <a href="about-me.html"><li>About Me</li></a>
-                <a href="#"><li>Demo Site</li></a>
-            </ul>
-        </div>
 
-        <!-- Creating the sidenav -->
-        <div id="mySidenav" class="sidenav">
-
-            <br><br><br>
-            <!-- showing the topnav links in the mobile version -->
-            <div class="sidenav__mobile">
-                <a href="about-me.html"><li>About Me</li></a>
-                <a href="#"><li>Demo Site</li></a><br><br>
-            </div>
-
-            <!-- Close button function -->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-           <!-- Adding contents to sidenav -->
+        <!-- Close button function -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <!-- Adding contents to sidenav -->
         <ul class="sidenav__list">
           <a href="#"><strong>Branding</strong></a>
           <a href="colours.html"><li class="active">Colours</li></a>
           <a href="typography.html"><li>Typography</li></a>
           <a href="#"><li>Logo</li></a>
-          </ul><br>
-          <ul class="sidenav__list">
-              <a href="#"><strong>Utilities</strong></a>
-              <a href="#"><li>Spacing</li></a>
-              <a href="#"><li>Containers</li></a>
-              <a href="#"><li>Images</li></a>
-              <a href="#"><li>Interactive</li></a>
-              <a href="#"><li>Feedback</li></a>
-              </ul><br>
-              <ul class="sidenav__list">
-                  <a href="#"><strong>Navigation</strong></a>
-                  <a href="#"><li>Navbars</li></a>
-                  <a href="#"><li>Breadcrumbs</li></a>
-                  <a href="#"><li>Pagination</li></a>
-                  </ul><br>
-                  <ul class="sidenav__list">
-                  <a href="#"><strong>Blocks</strong></a>
-                  <a href="#"><li>Hero</li></a>
-                  <a href="#"><li>Carousel</li></a>
-                  <a href="#"><li>Slats</li></a>
-                  <a href="#"><li>Footer</li></a>
-                  </ul><br>
-                  <ul class="sidenav__list">
-                      <a href="#"><strong>Components</strong></a>
-                      <a href="#"><li>Cards</li></a>
-                      <a href="#"><li>Forms</li></a>
-                      <a href="#"><li>Accordion</li></a>
-                      <a href="#"><li>Lists</li></a>
-                      </ul><br><br><br><br><br><br><br><br><br>
-        
+        </ul>
+        <br />
+        <ul class="sidenav__list">
+          <a href="#"><strong>Utilities</strong></a>
+          <a href="#"><li>Spacing</li></a>
+          <a href="#"><li>Containers</li></a>
+          <a href="#"><li>Images</li></a>
+          <a href="#"><li>Interactive</li></a>
+          <a href="#"><li>Feedback</li></a>
+        </ul>
+        <br />
+        <ul class="sidenav__list">
+          <a href="#"><strong>Navigation</strong></a>
+          <a href="#"><li>Navbars</li></a>
+          <a href="#"><li>Breadcrumbs</li></a>
+          <a href="#"><li>Pagination</li></a>
+        </ul>
+        <br />
+        <ul class="sidenav__list">
+          <a href="#"><strong>Blocks</strong></a>
+          <a href="#"><li>Hero</li></a>
+          <a href="#"><li>Carousel</li></a>
+          <a href="#"><li>Slats</li></a>
+          <a href="#"><li>Footer</li></a>
+        </ul>
+        <br />
+        <ul class="sidenav__list">
+          <a href="#"><strong>Components</strong></a>
+          <a href="#"><li>Cards</li></a>
+          <a href="#"><li>Forms</li></a>
+          <a href="#"><li>Accordion</li></a>
+          <a href="#"><li>Lists</li></a>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+
+    <div id="main">
+      <section class="color-swatches">
+        <h2 class="head">Colour Swatches</h2>
+        <div class="swatch text-primary">
+          <p class="swatch__info">Class: .text-primary</p>
+          <p class="swatch__info">Hex: #000000</p>
+          <p class="swatch__info">Uses: Sidenav text hover effect</p>
         </div>
-  </div>
- 
-  <div id="main">
-  <section class="color-swatches">
-    <h2 class="head">Colour Swatches</h2>
-    <div class="swatch text-primary">
-        <p class="swatch__info">Class: .text-primary</p>
-        <p class="swatch__info">Hex: #000000</p>
-        <p class="swatch__info">Uses: Sidenav text hover effect</p>
-    </div>
-    
-    <div class="swatch bg-secondary-100"> 
-        <p class="swatch__info">Class: .bg-secondary-100</p>
-        <p class="swatch__info">Hex: #333333</p>
-        <p class="swatch__info">Uses: Sidenav background</p>
-    </div>
 
-    <div class="swatch bg-white">
-        <p class="swatch__info">Class: .bg-white</p>
-        <p class="swatch__info">Hex: #ffffff</p>
-        <p class="swatch__info">Uses: Main background, sidenav hover background</p>
-    </div>
+        <div class="swatch bg-secondary-100">
+          <p class="swatch__info">Class: .bg-secondary-100</p>
+          <p class="swatch__info">Hex: #333333</p>
+          <p class="swatch__info">Uses: Sidenav background</p>
+        </div>
 
-    <div class="swatch text-secondary-200">
-        <p class="swatch__info">Class: .text-secondary-200</p>
-        <p class="swatch__info">Hex: #F0F0F0</p>
-        <p class="swatch__info">Uses: Sidenav text colour, Topnav hover effect</p>
-    </div>
+        <div class="swatch bg-white">
+          <p class="swatch__info">Class: .bg-white</p>
+          <p class="swatch__info">Hex: #ffffff</p>
+          <p class="swatch__info">
+            Uses: Main background, sidenav hover background
+          </p>
+        </div>
 
-    <div class="swatch bg-accent">
-        <p class="swatch__info">Class: .bg-accent</p>
-        <p class="swatch__info">Hex: #0066CC</p>
-        <p class="swatch__info">Uses: Top navbar background</p>
-    </div>
+        <div class="swatch text-secondary-200">
+          <p class="swatch__info">Class: .text-secondary-200</p>
+          <p class="swatch__info">Hex: #F0F0F0</p>
+          <p class="swatch__info">
+            Uses: Sidenav text colour, Topnav hover effect
+          </p>
+        </div>
 
-    <div class="swatch text-yellow">
-        <p class="swatch__info">Class: .text-yellow</p>
-        <p class="swatch__info">Hex: #FFFFCC</p>
-        <p class="swatch__info">Uses: Topnav text colour</p>
-    </div>
-    <div class="swatch active-red">
-        <p class="swatch__info">Class: .active-red</p>
-        <p class="swatch__info">Hex: #FF0000</p>
-        <p class="swatch__info">Uses: Indicates the current page</p>
-    </div>
-    </section><br><br><br><br>
-    <section class="color-combinations">
+        <div class="swatch bg-accent">
+          <p class="swatch__info">Class: .bg-accent</p>
+          <p class="swatch__info">Hex: #0066CC</p>
+          <p class="swatch__info">Uses: Top navbar background</p>
+        </div>
+
+        <div class="swatch text-yellow">
+          <p class="swatch__info">Class: .text-yellow</p>
+          <p class="swatch__info">Hex: #FFFFCC</p>
+          <p class="swatch__info">Uses: Topnav text colour</p>
+        </div>
+        <div class="swatch active-red">
+          <p class="swatch__info">Class: .active-red</p>
+          <p class="swatch__info">Hex: #FF0000</p>
+          <p class="swatch__info">Uses: Indicates the current page</p>
+        </div>
+      </section>
+      <br /><br /><br /><br />
+      <section class="color-combinations">
         <h2 class="head">Color Combinations</h2>
         <div class="color combination-1">
-            <h4 class="combination__details">Yellow text on Blue background</h4>
-            <p class="combination__details">Contrast ratio: 7.17:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">Yellow text on Blue background</h4>
+          <p class="combination__details">Contrast ratio: 7.17:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-2">
-            <h4 class="combination__details">Light Grey text on Dark Grey background</h4>
-            <p class="combination__details">Contrast ratio: 7.33:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">
+            Light Grey text on Dark Grey background
+          </h4>
+          <p class="combination__details">Contrast ratio: 7.33:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-3">
-            <h4 class="combination__details">Blue text on White background</h4>
-            <p class="combination__details">Contrast ratio: 7.42:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">Blue text on White background</h4>
+          <p class="combination__details">Contrast ratio: 7.42:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-4">
-            <h4 class="combination__details">White text on Black background</h4>
-            <p class="combination__details">Contrast ratio: 21:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">White text on Black background</h4>
+          <p class="combination__details">Contrast ratio: 21:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-5">
-            <h4 class="combination__details">White text on Dark Grey background</h4>
-            <p class="combination__details">Contrast ratio: 7.11:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">
+            White text on Dark Grey background
+          </h4>
+          <p class="combination__details">Contrast ratio: 7.11:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-6">
-            <h4 class="combination__details">White text on Light Grey background</h4>
-            <p class="combination__details">Contrast ratio: 1.73:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">
+            White text on Light Grey background
+          </h4>
+          <p class="combination__details">Contrast ratio: 1.73:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-7">
-            <h4 class="combination__details">White text on Yellow background</h4>
-            <p class="combination__details">Contrast ratio: 2.04:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">White text on Yellow background</h4>
+          <p class="combination__details">Contrast ratio: 2.04:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-8">
-            <h4 class="combination__details">White text on Red background</h4>
-            <p class="combination__details">Contrast ratio: 4.49:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">White text on Red background</h4>
+          <p class="combination__details">Contrast ratio: 4.49:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-9">
-            <h4 class="combination__details">Black text on Dark Grey background</h4>
-            <p class="combination__details">Contrast ratio: 21:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">
+            Black text on Dark Grey background
+          </h4>
+          <p class="combination__details">Contrast ratio: 21:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-10">
-            <h4 class="combination__details">Light Grey text on Black background</h4>
-            <p class="combination__details">Contrast ratio: 4.15:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">
+            Light Grey text on Black background
+          </h4>
+          <p class="combination__details">Contrast ratio: 4.15:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-11">
-            <h4 class="combination__details">Blue text on Black background</h4>
-            <p class="combination__details">Contrast ratio: 4.71:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">Blue text on Black background</h4>
+          <p class="combination__details">Contrast ratio: 4.71:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-12">
-            <h4 class="combination__details">Black text on Red background</h4>
-            <p class="combination__details">Contrast ratio: 5.07:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">Black text on Red background</h4>
+          <p class="combination__details">Contrast ratio: 5.07:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-13">
-            <h4 class="combination__details">Black text on Yellow background</h4>
-            <p class="combination__details">Contrast ratio: 10.54:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">Black text on Yellow background</h4>
+          <p class="combination__details">Contrast ratio: 10.54:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-14">
-            <h4 class="combination__details">Dark Grey text on Blue background</h4>
-            <p class="combination__details">Contrast ratio: 4.69:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">
+            Dark Grey text on Blue background
+          </h4>
+          <p class="combination__details">Contrast ratio: 4.69:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-15">
-            <h4 class="combination__details">Red text on Dark Grey background</h4>
-            <p class="combination__details">Contrast ratio: 4.51:1</p>
-            <p class="combination__details">Pass</p>
-        </div><br>
+          <h4 class="combination__details">Red text on Dark Grey background</h4>
+          <p class="combination__details">Contrast ratio: 4.51:1</p>
+          <p class="combination__details">Pass</p>
+        </div>
+        <br />
         <div class="color combination-16">
-            <h4 class="combination__details">Yellow text on Dark Grey background</h4>
-            <p class="combination__details">Contrast ratio: 2.04:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">
+            Yellow text on Dark Grey background
+          </h4>
+          <p class="combination__details">Contrast ratio: 2.04:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-17">
-            <h4 class="combination__details">Light Grey text on Blue background</h4>
-            <p class="combination__details">Contrast ratio: 3.49:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">
+            Light Grey text on Blue background
+          </h4>
+          <p class="combination__details">Contrast ratio: 3.49:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-18">
-            <h4 class="combination__details">Red text on Light Grey background</h4>
-            <p class="combination__details">Contrast ratio: 4.15:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">
+            Red text on Light Grey background
+          </h4>
+          <p class="combination__details">Contrast ratio: 4.15:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-19">
-            <h4 class="combination__details">Yellow text on Red background</h4>
-            <p class="combination__details">Contrast ratio: 1.60:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">Yellow text on Red background</h4>
+          <p class="combination__details">Contrast ratio: 1.60:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-20">
-            <h4 class="combination__details">Blue text on Red background</h4>
-            <p class="combination__details">Contrast ratio: 2.47:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
+          <h4 class="combination__details">Blue text on Red background</h4>
+          <p class="combination__details">Contrast ratio: 2.47:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
         <div class="color combination-21">
-            <h4 class="combination__details">Yellow text on Blue background</h4>
-            <p class="combination__details">Contrast ratio: 2.69:1</p>
-            <p class="combination__details">Fail</p>
-        </div><br>
-    </section>
-</div>
-      <!-- Adding javascript to index -->
-      <script src="script.mjs"></script>
-</body>
+          <h4 class="combination__details">Yellow text on Blue background</h4>
+          <p class="combination__details">Contrast ratio: 2.69:1</p>
+          <p class="combination__details">Fail</p>
+        </div>
+        <br />
+      </section>
+    </div>
+    <!-- Adding javascript to index -->
+    <script src="script.mjs"></script>
+  </body>
 </html>
