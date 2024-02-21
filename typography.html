@@ -18,12 +18,12 @@
 <body>
 
     <!-- Creating the top navbar -->
-    <div class="navbar u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
-        <div class="navbar__col-logo">
+    <div class="navbar bg-accent u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
+        <div class="navbar__col-logo text-yellow">
         <h2 class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07"><a href="index.html">Design System</a></h2>
         </div>
         <div class="navbar__col-list">
-            <ul class="col__list">
+            <ul class="col__list text-yellow">
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -34,11 +34,11 @@
         </div>
 
         <!-- Creating the sidenav -->
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav bg-secondary-100">
 
             <br><br><br>
             <!-- showing the topnav links in the mobile version -->
-            <div class="sidenav__mobile">
+            <div class="sidenav__mobile text-secondary-200">
                 <a href="about-me.html"><li>About Me</li></a>
                 <a href="#"><li>Demo Site</li></a><br><br>
             </div>
@@ -46,13 +46,13 @@
             <!-- Close button function -->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
            <!-- Adding contents to sidenav -->
-        <ul class="sidenav__list">
+        <ul class="sidenav__list text-secondary-200">
           <a href="#"><strong>Branding</strong></a>
           <a href="colours.html"><li>Colours</li></a>
           <a href="typography.html"><li class="active">Typography</li></a>
           <a href="#"><li>Logo</li></a>
           </ul><br>
-          <ul class="sidenav__list">
+          <ul class="sidenav__list text-secondary-200">
               <a href="#"><strong>Utilities</strong></a>
               <a href="#"><li>Spacing</li></a>
               <a href="#"><li>Containers</li></a>
@@ -60,20 +60,20 @@
               <a href="#"><li>Interactive</li></a>
               <a href="#"><li>Feedback</li></a>
               </ul><br>
-              <ul class="sidenav__list">
+              <ul class="sidenav__list text-secondary-200">
                   <a href="#"><strong>Navigation</strong></a>
                   <a href="#"><li>Navbars</li></a>
                   <a href="#"><li>Breadcrumbs</li></a>
                   <a href="#"><li>Pagination</li></a>
                   </ul><br>
-                  <ul class="sidenav__list">
+                  <ul class="sidenav__list text-secondary-200">
                   <a href="#"><strong>Blocks</strong></a>
                   <a href="#"><li>Hero</li></a>
                   <a href="#"><li>Carousel</li></a>
                   <a href="#"><li>Slats</li></a>
                   <a href="#"><li>Footer</li></a>
                   </ul><br>
-                  <ul class="sidenav__list">
+                  <ul class="sidenav__list text-secondary-200">
                       <a href="#"><strong>Components</strong></a>
                       <a href="#"><li>Cards</li></a>
                       <a href="#"><li>Forms</li></a>
@@ -87,16 +87,16 @@
     <h2 class="head">Typography</h2><br><br>
 
     <section class="typeface">
-        <div class="typeface__calibri u-ff-calibri">
-            <h2 class="typeface__calibri-head">CALIBRI</h2><br>
-            <p class="typeface__calibri--font"><strong>CAPITAL LETTERTS:</strong><br><br>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br><br><strong>SMALL LETTERS:</strong><br><br> a b c d e f g h i j k l m n o p q r s t u v w x y z <br><br><strong>NUMBERS:</strong><br><br> 0 1 2 3 4 5 6 7 8 9 <br><br><strong>UTILITY CLASSNAME:</strong><br><br> u-ff-calibri
+        <div class="typeface__calibri bg-yellow text-primary u-ff-calibri">
+            <h2 class="u-ff-calibri font-use_head">CALIBRI</h2><br>
+            <p class="typeface__calibri--font u-ff-calibri u-fw-500 u-letter-spacing-4"><strong>CAPITAL LETTERTS:</strong><br><br>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br><br><strong>SMALL LETTERS:</strong><br><br> a b c d e f g h i j k l m n o p q r s t u v w x y z <br><br><strong>NUMBERS:</strong><br><br> 0 1 2 3 4 5 6 7 8 9 <br><br><strong>UTILITY CLASSNAME:</strong><br><br> u-ff-calibri
             </p><br>
-            <p class="typeface__calibri--font"><strong>FONT USES:</strong><br><br>Top Navbar typeface, Side Navbar typeface, h2 <br><br> 
-            <p class="typeface__calibri--font"><strong>UTILITY CLASSES:</strong><br><br>
+            <p class="typeface__calibri--font u-ff-calibri u-fw-500 u-letter-spacing-4"><strong>FONT USES:</strong><br><br>Top Navbar typeface, Side Navbar typeface, h2 <br><br> 
+            <p class="typeface__calibri--font u-ff-calibri u-fw-500 u-letter-spacing-4"><strong>UTILITY CLASSES:</strong><br><br>
                 <h4 class="Calibri--font_util">Div(Top Navbar):</h4>
                 <table class="font-use__table">
                 <thead>
-                  <tr class="u-ff-cambria">
+                  <tr class="u-ff-calibri">
                     <th></th>
                     <th>Font Family</th>
                     <th>Font Size</th>
@@ -104,7 +104,7 @@
                     <th>Letter Spacing</th>
                   </tr>
                 </thead>
-                <tbody class="u-ff-cambria u-fs-18 u-fw-500">
+                <tbody class="u-ff-calibri u-fs-18 u-fw-500">
                   <!--DM Sans (Heading)-->
                   <tr>
                     <td><strong>Properties</strong></td>
@@ -126,7 +126,7 @@
               <h4 class="Calibri--font_util">Div(Side Navbar):</h4>
                 <table class="font-use__table">
                 <thead>
-                  <tr class="u-ff-cambria">
+                  <tr class="u-ff-calibri">
                     <th></th>
                     <th>Font Family</th>
                     <th>Font Size</th>
@@ -134,7 +134,7 @@
                     <th>Letter Spacing</th>
                   </tr>
                 </thead>
-                <tbody class="u-ff-cambria u-fs-18 u-fw-500">
+                <tbody class="u-ff-calibri u-fs-18 u-fw-500">
                   <!--DM Sans (Heading)-->
                   <tr>
                     <td><strong>Properties</strong></td>
@@ -156,7 +156,7 @@
               <h4 class="Calibri--font_util">Headings(h2):</h4>
                 <table class="font-use__table">
                 <thead>
-                  <tr class="u-ff-cambria">
+                  <tr class="u-ff-calibri">
                     <th></th>
                     <th>Font Family</th>
                     <th>Font Size</th>
@@ -164,7 +164,7 @@
                     <th>Letter Spacing</th>
                   </tr>
                 </thead>
-                <tbody class="u-ff-cambria u-fs-18 u-fw-500">
+                <tbody class="u-ff-calibri u-fs-18 u-fw-500">
                   <!--DM Sans (Heading)-->
                   <tr>
                     <td><strong>Properties</strong></td>
@@ -184,13 +184,13 @@
                 </tbody>
               </table><br><br><br><br>
         </div>
-        <div class="typeface__cambria u-ff-cambria">
-            <h2 class="typeface__cambria-head">CAMBRIA</h2><br>
+        <div class="typeface__cambria bg-secondary-100 text-white u-ff-cambria">
+            <h2 class="typeface__cambria-head u-ff-cambria">CAMBRIA</h2><br>
             <p class="typeface__cambria--font"> <strong>CAPITAL LETTERTS:</strong><br><br>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br><br><strong>SMALL LETTERS:</strong><br><br>a b c d e f g h i j k l m n o p q r s t u v w x y z <br><br><strong>NUMBERS:</strong><br><br>0 1 2 3 4 5 6 7 8 9 <br><br><strong>UTILITY CLASSNAME:</strong><br><br> u-ff-cambria
             </p><br>
-            <p class="typeface__cambria--font"><strong>FONT USES:</strong> <br><br> Colors page content typeface</p><br>
-            <p class="typeface__cambria--font"><strong>UTILITY CLASSES:</strong><br><br>
-                <h4 class="Calibri--font_util">Div(Colors):</h4>
+            <p class="typeface__cambria--font u-ff-cambria u-fw-500 u-letter-spacing-4"><strong>FONT USES:</strong> <br><br> Colors page content typeface</p><br>
+            <p class="typeface__cambria--font u-ff-cambria u-fw-500 u-letter-spacing-4"><strong>UTILITY CLASSES:</strong><br><br>
+                <h4 class="Calibri--font_util u-fs-18">Div(Colors):</h4>
                 <table class="font-use__table">
                 <thead>
                   <tr class="u-ff-cambria">

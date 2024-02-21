@@ -1,4 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: auto;
+}
 
+
+/*  styling html and body */
+html, body {
+  height: 100%;
+  background: var(--clr-white);
+}
+
+/*  Declaring global variables */
 :root {
   --clr-primary: #000000;
   --clr-white: #ffffff;
@@ -20,4 +33,62 @@
 }
   
 
+.text-yellow{color: var(--clr-yellow);}
+.text-secondary-200{color: var(--clr-secondary-200);}
+.text-primary{color: var(--clr-primary);}
+.text-white{color: var(--clr-white);}
+.text-red{color: var(--clr-red);}
+.text-accent{color: var(--clr-accent);}
+.text-secondary-100{color: var(--clr-secondary-100);}
+.bg-accent{background-color: var(--clr-accent);}
+.bg-secondary-100{background-color: var(--clr-secondary-100);}
+.bg-yellow{background-color: var(--clr-yellow);}
+.bg-primary{background-color: var(--clr-primary);}
+.bg-white{background-color: var(--clr-white);}
+.bg-secondary-200{background-color: var(--clr-secondary-200);}
+.bg-red{background-color: var(--clr-red);}
+
+
+
+.active {
+  color: var(--clr-red);
+}
+ /* When you mouse over the navigation links, change their color */
+ .sidenav a:hover {
+  color: var(--clr-primary);
+  background-color: var(--clr-white);
+}
+ /* Hovers over contents in the top navbar  */
+ a:hover{
+  color: var(--clr-secondary-200); 
+}
+
+.u-ff-calibri{
+  font-family: var(--font-family-head);
+}
+.u-ff-cambria{
+  font-family: var(--font-family-body);
+}
+.u-fs-18{
+  font-size: var(--font-size-body);
+}
+.u-fs-30{
+  font-size: var(--font-size-head);
+}
+.u-fw-bold{
+  font-weight: var(--font-weight-head);
+}
+.u-fw-500{
+  font-weight: var(--font-weight-body);
+ }
+.u-letter-spacing-02{
+  letter-spacing: var(--letter-spacing-body);
+}
+
+.u-letter-spacing-07{
+  letter-spacing: var(--letter-spacing-head);
+}
+.u-letter-spacing-4{
+  letter-spacing: var(--letter-spacing-type);
+}
  
