@@ -49,10 +49,7 @@
 
 /* Formatting the hamburger logo  */
 .icon {
-    font-size: 25px;
-    padding: 10px 16px;
-    right: 0;
-    top: 0;
+    display: none;
 }
 
   /* Removing the underline effect in href  */
@@ -69,10 +66,10 @@
     position: fixed; 
     z-index: 1; 
     top: 0; 
-    left: 0; 
-    overflow-x: hidden; 
+    left: 0;  
     padding-top: 60px; 
     transition: 0.5s; 
+    display: block;
   }
   
   /* The navigation menu links */
@@ -137,11 +134,22 @@
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
    @media screen and (max-width: 600px) {
-    .sidenav {padding-top: 15px;}
+    .sidenav {
+      padding-top: 15px;
+      overflow-x: hidden;
+    }
     .sidenav a {font-size: 18px;}
     .col__list li {display: none;}
     .sidenav__mobile{
         display: block;
         list-style: none;
     }
+  }
+  .icon{ 
+    display: block;
+    opacity: 1;
+    font-size: 25px;
+    padding: 10px 16px;
+    right: 0;
+    top: 0;
   }
