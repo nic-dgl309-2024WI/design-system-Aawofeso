@@ -47,10 +47,7 @@
     padding: 14px 16px; 
 }
 
-/* Formatting the hamburger logo  */
-.icon {
-    display: none;
-}
+
 
   /* Removing the underline effect in href  */
   a{
@@ -61,17 +58,20 @@
 
  /* The side navigation menu */
 .sidenav {
-    height: 100%;
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;  
-    padding-top: 60px; 
-    transition: 0.5s; 
-    display: block;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: block;
   }
   
+  .closebtn {
+    background-color: var(--clr-secondary-100);
+  }
   /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -140,6 +140,7 @@
    @media screen and (max-width: 600px) {
     .sidenav {
       padding-top: 15px;
+      position:fixed;
       overflow-x: hidden;
     }
     .sidenav a {font-size: 18px;}
@@ -149,7 +150,11 @@
         list-style: none;
     }
   }
-  .icon{ 
+
+  .closebtn {
+    display: block;
+  }
+ /* #iconi{ 
     display: block;
     opacity: 1;
     font-size: 25px;

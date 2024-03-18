@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="design-system.css"/>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,9 +25,8 @@
         </div>
         <div class="navbar__col-list">
             <ul class="col__list text-yellow">
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);"  onclick="myFunction()">
-                    <h2 id="icon" class="icon"><i  class="fa fa-bars"></i></h2>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->  
+                    <a href="javascript:void(0);" id="iconi" class="icon" onclick="myFunction(x,y); sideAni(x,y)"></a>
                   </a>
                 <a href="about-me.html"><li>About Me</li></a>
                 <a href="#"><li>Demo Site</li></a>
@@ -48,9 +46,8 @@
       </div>
 
   <!-- Close button function -->
-  <a href="javascript:void(0)" class="closebtn text-secondary-200" onclick="closeNav()"
-    >&times;</a
-  >
+  
+  <a href="javascript:void(0);" id="closeNav" class="closebtn text-secondary-200" onclick="myFunction(x,y); sideAni(x,y)"></a>
   <!-- Adding contents to sidenav -->
   <ul class="sidenav__list text-secondary-200">
     <a href="#"><strong>Branding</strong></a>
@@ -60,8 +57,8 @@
     </ul><br>
     <ul class="sidenav__list text-secondary-200">
         <a href="#"><strong>Utilities</strong></a>
-        <a href="#"><li>Spacing</li></a>
-        <a href="#"><li>Containers</li></a>
+        <a href="spacing.html"><li>Spacing</li></a>
+        <a href="container.html"><li>Containers</li></a>
         <a href="#"><li>Images</li></a>
         <a href="#"><li>Interactive</li></a>
         <a href="#"><li>Feedback</li></a>
@@ -88,7 +85,7 @@
                 </ul><br><br><br><br><br><br><br><br><br>
   
   </div>
-  <div id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 ">
+  <div href="javascript:void(0);" id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 " onclick="sideAni(x,y)"></div>
 
     <!-- Adding javascript to index -->
     <script src="script.mjs"></script>

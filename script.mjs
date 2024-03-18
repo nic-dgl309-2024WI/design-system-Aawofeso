@@ -1,38 +1,63 @@
   
-  /* Set the width of the side navigation to 0 */
+//   /* Set the width of the side navigation to 0 */
+
+var x = window.matchMedia("(min-width: 200px) and (max-width: 600px)");
+var y = window.matchMedia("(min-width: 601px) and (max-width: 1999px)");
 
 
+function myFunction(x,y) {
+  if (x.matches) { // If media query matches
+    document.getElementById('iconi').innerHTML = `
+        <i class="fa fa-bars"></i>
+    `;
+    document.getElementById('closeNav').innerHTML = `
+    <i class="fa fa-cancel"></i>
+    `
+  } else if(y.matches) {
 
-
-
-  function closeNav() {
-    x.style.width = "0"; 
-    y.style.marginLeft = "0";
-  }
-
-  function myFunction() {
+    document.getElementById('iconi').style.display = "none";
     
-   x.style.width = "250px"; 
-   y.style.marginLeft = "250px";
   }
+}
 
 
-  function resize() {
+  function sideAni(x,y) {
+    if(x.matches) {
+      document.getElementById('iconi').addEventListener('click', () => {
+        document.querySelector('#mySidenav').style.width = "200px"; 
+        document.querySelector('#main').style.marginLeft = "200px";
+       });
 
-    if (z.style.display == 'none') { 
-      z.style.display = 'block';
-    } else {
-      z.style.display = 'none';
+       document.getElementById('closeNav').addEventListener('click', () => {
+        document.querySelector('#mySidenav').style.width = "0"; 
+        document.querySelector('#main').style.marginLeft = "0";
+      });
+    } else if (y.matches) {
+      document.querySelector('#mySidenav').style.display = "block";
     }
-
   }
 
 
-  z.addEventListener('click', resize);
 
-  const x = document.getElementById("mySidenav");
-  const y = document.getElementById("main");
-  const z = document.getElementById("icon");
- 
 
+  x.addEventListener("change", function() {
+    myFunction(x,y);
+  });
   
+  x.addEventListener("change", function() {
+    sideAni(x,y);
+  });
+  
+  y.addEventListener("change", function() {
+    myFunction(x,y);
+  });
+  
+  y.addEventListener("change", function() {
+    sideAni(x,y);
+  });
+  
+
+
+
+
+
