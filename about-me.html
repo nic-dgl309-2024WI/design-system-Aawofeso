@@ -3,10 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="design-system.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+
+    <!-- Creating the top navbar -->
+    <div class="navbar bg-accent u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
+      <div class="navbar__col-logo text-yellow">
+      <h2 class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07"><a href="index.html">Design System</a></h2>
+      </div>
+      <div class="navbar__col-list">
+          <ul class="col__list text-yellow">
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->  
+                  <a href="javascript:void(0);" id="iconi" class="icon" onclick="myFunction(x,y); sideAni(x,y)"></a>
+                </a>
+              <a href="about-me.html" class="active"><li>About Me</li></a>
+              <a href="#"><li>Demo Site</li></a>
+          </ul>
+      </div>
+
+</div>
+
+<!-- Creating the sidenav -->
+<div id="mySidenav" class="sidenav bg-secondary-100 text-accent">
+
+  <br><br><br>
+  <!-- showing the topnav links in the mobile version -->
+  <div class="sidenav__mobile text-secondary-200">
+      <a href="about-me.html"><li>About Me</li></a>
+      <a href="#"><li>Demo Site</li></a><br><br>
+  </div>
+
+<!-- Close button function -->
+
+<a href="javascript:void(0);" id="closeNav" class="closebtn text-secondary-200" onclick="myFunction(x,y); sideAni(x,y)"></a>
+<!-- Adding contents to sidenav -->
+<ul class="sidenav__list text-secondary-200">
+<a href="#"><strong>Branding</strong></a>
+<a href="colours.html"><li>Colours</li></a>
+<a href="typography.html"><li>Typography</li></a>
+<a href="#"><li>Logo</li></a>
+</ul><br>
+<ul class="sidenav__list text-secondary-200">
+    <a href="#"><strong>Utilities</strong></a>
+    <a href="spacing.html"><li>Spacing</li></a>
+    <a href="container.html"><li>Containers</li></a>
+    <a href="#"><li>Images</li></a>
+    <a href="#"><li>Interactive</li></a>
+    <a href="#"><li>Feedback</li></a>
+    </ul><br>
+    <ul class="sidenav__list text-secondary-200">
+        <a href="#"><strong>Navigation</strong></a>
+        <a href="#"><li>Navbars</li></a>
+        <a href="#"><li>Breadcrumbs</li></a>
+        <a href="#"><li>Pagination</li></a>
+        </ul><br>
+        <ul class="sidenav__list text-secondary-200">
+        <a href="#"><strong>Blocks</strong></a>
+        <a href="#"><li>Hero</li></a>
+        <a href="#"><li>Carousel</li></a>
+        <a href="#"><li>Slats</li></a>
+        <a href="#"><li>Footer</li></a>
+        </ul><br>
+        <ul class="sidenav__list text-secondary-200">
+            <a href="#"><strong>Components</strong></a>
+            <a href="#"><li>Cards</li></a>
+            <a href="#"><li>Forms</li></a>
+            <a href="#"><li>Accordion</li></a>
+            <a href="#"><li>Lists</li></a>
+            </ul><br><br><br><br><br><br><br><br><br>
+
+</div>
+<div href="javascript:void(0);" id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 " onclick="sideAni(x,y)">
     <!-- add your name -->
     <h1>Hi! My name is Abdulbasit Awofeso.</h1>
     <h2>I am a web developer.</h2>
@@ -40,5 +119,7 @@
         Principles
       </li>
     </ul>
+</div>
+    <script src="script.mjs"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
   
-//   /* Set the width of the side navigation to 0 */
+//   /* Set the match media values */
 
 var x = window.matchMedia("(min-width: 200px) and (max-width: 600px)");
 var y = window.matchMedia("(min-width: 601px) and (max-width: 1999px)");
@@ -11,7 +11,7 @@ function myFunction(x,y) {
         <i class="fa fa-bars"></i>
     `;
     document.getElementById('closeNav').innerHTML = `
-    <i class="fa fa-cancel"></i>
+    &times;
     `
   } else if(y.matches) {
 
@@ -33,7 +33,7 @@ function myFunction(x,y) {
         document.querySelector('#main').style.marginLeft = "0";
       });
     } else if (y.matches) {
-      document.querySelector('#mySidenav').style.display = "block";
+      document.querySelector('#mySidenav').style.marginLeft = "200px";
     }
   }
 
