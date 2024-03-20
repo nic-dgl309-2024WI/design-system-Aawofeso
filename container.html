@@ -21,75 +21,73 @@
   <body>
      <!-- Creating the top navbar -->
      <div class="navbar bg-accent u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
-        <div class="navbar__col-logo text-yellow">
-        <h2 class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07 "><a href="index.html">Design System</a></h2>
-        </div>
-        <div class="navbar__col-list">
-            <ul class="col__list text-yellow">
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);"  onclick="myFunction()">
-                    <h2 id="icon" class="icon"><i  class="fa fa-bars"></i></h2>
-                  </a>
-                <a href="about-me.html"><li>About Me</li></a>
-                <a href="#"><li>Demo Site</li></a>
-            </ul>
-        </div>
-
-  </div>
-
-    <!-- Creating the sidenav -->
-    <div id="mySidenav" class="sidenav bg-secondary-100 text-accent">
-
-      <br><br><br>
-      <!-- showing the topnav links in the mobile version -->
-      <div class="sidenav__mobile text-secondary-200">
-          <a href="about-me.html" class="active"><li>About Me</li></a>
-          <a href="#"><li>Demo Site</li></a><br><br>
+      <div class="navbar__col-logo text-yellow">
+      <h2 class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07 active"><a href="index.html">Design System</a></h2>
+      </div>
+      <div class="navbar__col-list">
+          <ul class="col__list text-yellow">
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->  
+                  <a href="javascript:void(0);" id="iconi" class="icon" onclick="myFunction(x,y); sideAni(x,y)"></a>
+                </a>
+              <a href="about-me.html"><li>About Me</li></a>
+              <a href="#"><li>Demo Site</li></a>
+          </ul>
       </div>
 
-  <!-- Close button function -->
-  <a href="javascript:void(0)" class="closebtn text-secondary-200" onclick="closeNav()"
-    >&times;</a
-  >
-  <!-- Adding contents to sidenav -->
+</div>
+
+  <!-- Creating the sidenav -->
+  <div id="mySidenav" class="sidenav bg-secondary-100 text-accent">
+
+    <br><br><br>
+    <!-- showing the topnav links in the mobile version -->
+    <div class="sidenav__mobile text-secondary-200">
+        <a href="about-me.html"><li>About Me</li></a>
+        <a href="#"><li>Demo Site</li></a><br><br>
+    </div>
+
+<!-- Close button function -->
+
+<a href="javascript:void(0);" id="closeNav" class="closebtn text-secondary-200" onclick="myFunction(x,y); sideAni(x,y)"></a>
+<!-- Adding contents to sidenav -->
+<ul class="sidenav__list text-secondary-200">
+  <a href="#"><strong>Branding</strong></a>
+  <a href="colours.html"><li>Colours</li></a>
+  <a href="typography.html"><li>Typography</li></a>
+  <a href="#"><li>Logo</li></a>
+  </ul><br>
   <ul class="sidenav__list text-secondary-200">
-    <a href="#"><strong>Branding</strong></a>
-    <a href="colours.html"><li>Colours</li></a>
-    <a href="typography.html"><li>Typography</li></a>
-    <a href="#"><li>Logo</li></a>
-    </ul><br>
-    <ul class="sidenav__list text-secondary-200">
-        <a href="#"><strong>Utilities</strong></a>
-        <a href="spacing.html"><li>Spacing</li></a>
-        <a href="container.html" class="active"><li>Containers</li></a>
-        <a href="#"><li>Images</li></a>
-        <a href="#"><li>Interactive</li></a>
-        <a href="#"><li>Feedback</li></a>
-        </ul><br>
-        <ul class="sidenav__list text-secondary-200">
-            <a href="#"><strong>Navigation</strong></a>
-            <a href="#"><li>Navbars</li></a>
-            <a href="#"><li>Breadcrumbs</li></a>
-            <a href="#"><li>Pagination</li></a>
-            </ul><br>
-            <ul class="sidenav__list text-secondary-200">
-            <a href="#"><strong>Blocks</strong></a>
-            <a href="#"><li>Hero</li></a>
-            <a href="#"><li>Carousel</li></a>
-            <a href="#"><li>Slats</li></a>
-            <a href="#"><li>Footer</li></a>
-            </ul><br>
-            <ul class="sidenav__list text-secondary-200">
-                <a href="#"><strong>Components</strong></a>
-                <a href="#"><li>Cards</li></a>
-                <a href="#"><li>Forms</li></a>
-                <a href="#"><li>Accordion</li></a>
-                <a href="#"><li>Lists</li></a>
-                </ul><br><br><br><br><br><br><br><br><br>
-  
-  </div>
+      <a href="#"><strong>Utilities</strong></a>
+      <a href="spacing.html"><li>Spacing</li></a>
+      <a href="container.html"><li>Containers</li></a>
+      <a href="#"><li>Images</li></a>
+      <a href="#"><li>Interactive</li></a>
+      <a href="#"><li>Feedback</li></a>
+      </ul><br>
+      <ul class="sidenav__list text-secondary-200">
+          <a href="#"><strong>Navigation</strong></a>
+          <a href="#"><li>Navbars</li></a>
+          <a href="#"><li>Breadcrumbs</li></a>
+          <a href="#"><li>Pagination</li></a>
+          </ul><br>
+          <ul class="sidenav__list text-secondary-200">
+          <a href="#"><strong>Blocks</strong></a>
+          <a href="#"><li>Hero</li></a>
+          <a href="#"><li>Carousel</li></a>
+          <a href="#"><li>Slats</li></a>
+          <a href="#"><li>Footer</li></a>
+          </ul><br>
+          <ul class="sidenav__list text-secondary-200">
+              <a href="#"><strong>Components</strong></a>
+              <a href="#"><li>Cards</li></a>
+              <a href="#"><li>Forms</li></a>
+              <a href="#"><li>Accordion</li></a>
+              <a href="#"><li>Lists</li></a>
+              </ul><br><br><br><br><br><br><br><br><br>
+
+</div>
   <div id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 ">
-    <section>
+    <section class="containers">
         <h3 class="u-ff-calibri l-mt-5 table-head">Flex</h3>
         <table class="font-use__table">
             <thead>
@@ -184,7 +182,7 @@
         </tbody>
     </table><br><br>
 
-    h3 class="u-ff-calibri l-mt-5 table-head">Grid</h3>
+    <h3 class="u-ff-calibri l-mt-5 table-head">Grid</h3>
         <table class="font-use__table">
             <thead>
               <tr class="u-ff-calibri">
@@ -307,7 +305,7 @@
         </tbody>
     </table><br><br>
 
-    h3 class="u-ff-calibri l-mt-5 table-head">Full Width</h3>
+    <h3 class="u-ff-calibri l-mt-5 table-head">Full Width</h3>
         <table class="font-use__table">
             <thead>
               <tr class="u-ff-calibri">

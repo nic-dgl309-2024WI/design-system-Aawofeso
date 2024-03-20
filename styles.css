@@ -172,7 +172,7 @@ html, body {
 .l-mr-5 { margin-right: 3rem; }
 
 /* creating container classes */
-.container {
+.containerr {
   width: 100%; 
   max-width: 1200px; 
   margin: 0 auto; 
@@ -254,7 +254,9 @@ html, body {
 .l-grid {
   display: grid;
 }
-
+.l-grid-cols{
+  grid-template-columns: auto auto auto;
+}
 .l-grid-cols-2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -263,6 +265,9 @@ html, body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.l-grid-rows {
+  grid-template-rows: auto auto auto;
+}
 .l-grid-rows-2 {
   grid-template-rows: repeat(2, 1fr);
 }
