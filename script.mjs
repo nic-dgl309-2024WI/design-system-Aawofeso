@@ -2,10 +2,13 @@
 //   /* Set the match media values */
 
 var x = window.matchMedia("(min-width: 200px) and (max-width: 600px)");
-var y = window.matchMedia("(min-width: 601px) and (max-width: 1999px)");
+
+x.addEventListener('change', function() {
+  sideAni(x);
+});
 
 
-function myFunction(x,y) {
+function myFunction(x) {
   if (x.matches) { // If media query matches
     document.getElementById('iconi').innerHTML = `
         <i class="fa fa-bars"></i>
@@ -13,15 +16,14 @@ function myFunction(x,y) {
     document.getElementById('closeNav').innerHTML = `
     &times;
     `
-  } else if(y.matches) {
-
+  } else {
     document.getElementById('iconi').style.display = "none";
-    
+    document.getElementById('closeNav').style.display = "none";
   }
-}
+};
 
 
-  function sideAni(x,y) {
+  function sideAni(x) {
     if(x.matches) {
       document.getElementById('iconi').addEventListener('click', () => {
         document.querySelector('#mySidenav').style.width = "200px"; 
@@ -32,32 +34,13 @@ function myFunction(x,y) {
         document.querySelector('#mySidenav').style.width = "0"; 
         document.querySelector('#main').style.marginLeft = "0";
       });
-    } else if (y.matches) {
-      document.querySelector('#mySidenav').style.marginLeft = "200px";
-    }
+  } else {
+    document.querySelector('#mySidenav').style.width = "200px"; 
+    document.querySelector('#main').style.marginLeft = "200px";
   }
+};
 
-
-
-
-  x.addEventListener("change", function() {
-    myFunction(x,y);
-  });
-  
-  x.addEventListener("change", function() {
-    sideAni(x,y);
-  });
-  
-  y.addEventListener("change", function() {
-    myFunction(x,y);
-  });
-  
-  y.addEventListener("change", function() {
-    sideAni(x,y);
-  });
-  
-
-
-
-
+x.addEventListener('change', function() {
+  myFunction(x);
+});
 
