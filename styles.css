@@ -15,12 +15,12 @@ html, body {
 /*  Declaring global variables */
 :root {
   --clr-primary: #000000;
-  --clr-white: #ffffff;
-  --clr-secondary-100: #333333;
-  --clr-secondary-200: #F0F0F0;
-  --clr-accent: #0066CC;
-  --clr-red: #FF0000;
-  --clr-yellow: #FFFFCC;
+  --clr-secondary: #ffffff;
+  --clr-green-100: #228B22;
+  --clr-green-200: #90EE90;
+  --clr-brown: #A52A2A;
+  --clr-orange: #FFA07A;
+  --clr-blue: #87CEEB;
 
   --font-family-head: 'Calibri';
   --font-family-body: 'Cambria';
@@ -34,34 +34,34 @@ html, body {
 }
   
 
-.text-yellow{color: var(--clr-yellow);}
-.text-secondary-200{color: var(--clr-secondary-200);}
+.text-blue{color: var(--clr-blue);}
+.text-green-200{color: var(--clr-green-200);}
 .text-primary{color: var(--clr-primary);}
-.text-white{color: var(--clr-white);}
-.text-red{color: var(--clr-red);}
-.text-accent{color: var(--clr-accent);}
-.text-secondary-100{color: var(--clr-secondary-100);}
-.bg-accent{background-color: var(--clr-accent);}
-.bg-secondary-100{background-color: var(--clr-secondary-100);}
-.bg-yellow{background-color: var(--clr-yellow);}
+.text-secondary{color: var(--clr-secondary);}
+.text-orange{color: var(--clr-orange);}
+.text-brown{color: var(--clr-brown);}
+.text-green-100{color: var(--clr-green-100);}
+.bg-brown{background-color: var(--clr-brown);}
+.bg-green-100{background-color: var(--clr-green-100);}
+.bg-blue{background-color: var(--clr-blue);}
 .bg-primary{background-color: var(--clr-primary);}
-.bg-white{background-color: var(--clr-white);}
-.bg-secondary-200{background-color: var(--clr-secondary-200);}
-.bg-red{background-color: var(--clr-red);}
+.bg-secondary{background-color: var(--clr-secondary);}
+.bg-green-200{background-color: var(--clr-green-200);}
+.bg-orange{background-color: var(--clr-orange);}
 
 
 
 .active {
-  color: var(--clr-red);
+  color: var(--clr-orange);
 }
  /* When you mouse over the navigation links, change their color */
  .sidenav a:hover {
   color: var(--clr-primary);
-  background-color: var(--clr-white);
+  background-color: var(--clr-secondary);
 }
  /* Hovers over contents in the top navbar  */
  a:hover{
-  color: var(--clr-secondary-200); 
+  color: var(--clr-green-200); 
 }
 
 .u-ff-calibri{
@@ -346,4 +346,28 @@ html, body {
 }
 
 
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: (var(--clr-secondary));
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: (var(--clr-primary));
+  color: (var(--clr-green-200));
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: (var(--clr-brown));
+}

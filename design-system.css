@@ -70,7 +70,7 @@
   }
   
   .closebtn {
-    background-color: var(--clr-secondary-100);
+    background-color: var(--clr-green-100);
   }
   /* The navigation menu links */
   .sidenav a {
@@ -141,7 +141,7 @@ img{
   border-width: 15px;
   border-radius: 360%;
   margin-left: 15px;
-  border-color: var( --clr-yellow);
+  border-color: var( --clr-blue);
   
 }
 
