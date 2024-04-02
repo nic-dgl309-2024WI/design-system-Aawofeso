@@ -423,6 +423,54 @@ html, body {
   padding: 20px;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: (var(--clr-secondary));
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: (var(--clr-orange));
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: (var(--clr-green-100));
+  opacity: 70%;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: (var(--clr-primary));
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: (var(--clr-green-100));
+  opacity: 40%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
   .sidenav {padding-top: 15px;}
