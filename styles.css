@@ -52,7 +52,7 @@ html, body {
 
 
 .active {
-  color: var(--clr-orange);
+  color: var(--clr-green-100);
 }
  /* When you mouse over the navigation links, change their color */
  .sidenav a:hover {
@@ -387,7 +387,7 @@ html, body {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: var(--clr-primary); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -405,17 +405,19 @@ html, body {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: var(--clr-green-200);
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: var(--clr-orange);
 }
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -446,16 +448,16 @@ html, body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: (var(--clr-green-100));
-  opacity: 70%;
+  background-color: var(--clr-green-100);
+  color: var(--clr-orange);
+  opacity: 60%;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   float: none;
-  color: (var(--clr-primary));
+  color: var(--clr-blue);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -463,14 +465,45 @@ html, body {
 }
 
 .dropdown-content a:hover {
-  background-color: (var(--clr-green-100));
-  opacity: 40%;
+  background-color: var(--clr-green-100);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .sidenav-dropdown {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .sidenav-dropdown:hover {
+  color: #f1f1f1;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.sidenav-dropdown--content {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Add an active class to the active dropdown button */
+.current {
+  background-color: green;
+  color: white;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
   .sidenav {padding-top: 15px;}
