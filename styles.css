@@ -22,8 +22,8 @@ html, body {
   --clr-orange: #FFA07A;
   --clr-blue: #87CEEB;
 
-  --font-family-head: 'Calibri';
-  --font-family-body: 'Cambria';
+  --font-family-head: 'Merriweather';
+  --font-family-body: 'Cabin';
   --font-size-head: 30px;
   --font-size-body: 18px;
   --font-weight-head: bold;
@@ -51,18 +51,6 @@ html, body {
 
 
 
-.active {
-  color: var(--clr-green-100);
-}
- /* When you mouse over the navigation links, change their color */
- .sidenav a:hover {
-  color: var(--clr-primary);
-  background-color: var(--clr-secondary);
-}
- /* Hovers over contents in the top navbar  */
- a:hover{
-  color: var(--clr-green-200); 
-}
 
 .u-ff-calibri{
   font-family: var(--font-family-head);
@@ -393,6 +381,15 @@ html, body {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.active {
+  color: var(--clr-orange);
+}
+ /* Hovers over contents in the top navbar  */
+ a:hover{
+  color: var(--clr-green-200); 
+}
+
+
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -405,7 +402,8 @@ html, body {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: var(--clr-green-200);
+  background-color: var(--clr-green-100);
+  color: var(--clr-orange);
 }
 
 /* Position and style the close button (top right corner) */
@@ -473,7 +471,7 @@ html, body {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .sidenav-dropdown {
+.sidenav-dropdown {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -489,14 +487,19 @@ html, body {
 
 /* On mouse-over */
 .sidenav a:hover, .sidenav-dropdown:hover {
-  color: #f1f1f1;
+  color: var(--clr-secondary);
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .sidenav-dropdown--content {
   display: none;
-  background-color: #262626;
+  
   padding-left: 8px;
+}
+
+.sidenav-dropdown--content > a:hover {
+  color: var(--clr-orange);
+  background-color: var(--clr-green-100);
 }
 
 /* Add an active class to the active dropdown button */
@@ -504,6 +507,37 @@ html, body {
   background-color: green;
   color: white;
 }
+
+.hero-image {
+  position: relative; 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Hero-Image.jpg) no-repeat center;
+  background-size: cover;
+  height: 91%;
+  overflow: hidden;
+
+}
+
+/*formatting the text and placing it in the right place*/
+.hero-image--content{ 
+  
+  margin-top: 200px;
+  width: 100%;
+  
+  color: var(--clr-orange);
+  height: auto;
+}
+
+.hero-image--header {
+  text-align: center;
+  justify-content: start;
+}
+
+.hero-image--text {
+  text-align: center;
+  justify-content: end;
+  font-size: 25px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
   .sidenav {padding-top: 15px;}
