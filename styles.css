@@ -537,7 +537,59 @@ html, body {
   justify-content: end;
   font-size: 25px;
 }
+.product-header{
+  text-align: center;
+}
+.product-carousel {
+  width: 100%; /* Width of carousel */
+  height: 166px; /* Height of carousel */
+}
 
+.product-carousel--container {
+  width: 100%; /* Width of card container */
+  display: flex; /* Set inline elements */
+  overflow-x: auto; /* Set overflow in horizontal scroll */
+  overflow-y: hidden; /* Hidden overflow in vertical scroll */
+  scroll-snap-type: x mandatory; /* Force the scroll to snap to the start of a scroll-snap area */
+  gap: 8px; /* Set gap between cards */
+  width: calc(100% - 16px);
+  margin: 8px;
+  flex: 0 0 calc(100% - 16px); /* Set width of card container */
+}
+.product-carousel--container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari and Opera */
+}
+.card-1{
+  background: url(images/f1.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-2{
+  background: url(images/f2.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-3{
+  background: url(images/f3.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-4{
+  background: url(images/f4.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-5{
+  background: url(images/f5.jpg) no-repeat center;
+  background-size: cover;
+}
+.carousel-container--card {
+  min-width: 250px; /* Set min width of card */
+  height: 150px; /* Set height of card */
+  scroll-snap-align: start; /* Set the element focus position in scroll container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4F5873;
+  color: #4a544c;
+  border-radius: 8px;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
   .sidenav {padding-top: 15px;}
