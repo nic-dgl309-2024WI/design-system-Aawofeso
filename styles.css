@@ -21,9 +21,11 @@ html, body {
   --clr-brown: #A52A2A;
   --clr-orange: #FFA07A;
   --clr-blue: #87CEEB;
+  --clr-gray: gray;
 
-  --font-family-head: 'Merriweather';
-  --font-family-body: 'Cabin';
+
+  --font-family-head: 'Calibri';
+  --font-family-body: 'Cambria';
   --font-size-head: 30px;
   --font-size-body: 18px;
   --font-weight-head: bold;
@@ -48,7 +50,8 @@ html, body {
 .bg-secondary{background-color: var(--clr-secondary);}
 .bg-green-200{background-color: var(--clr-green-200);}
 .bg-orange{background-color: var(--clr-orange);}
-
+ .text-gray{color: var(--clr-gray);}
+ .bg-gray{background-color: var(--clr-gray);}
 
 
 
@@ -637,6 +640,10 @@ html, body {
   width: 100;
   margin-left: 30px;
   margin-right: 30px;
+}
+
+.services > h3 {
+  margin-left: 60px;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
