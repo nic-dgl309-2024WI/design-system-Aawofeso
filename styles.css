@@ -762,6 +762,10 @@ form {
   display: inline-block;
   position: relative;
 }
+
+.col__list > div{
+  float: right;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
   .sidenav {padding-top: 15px;}

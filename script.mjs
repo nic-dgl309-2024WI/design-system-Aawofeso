@@ -11,7 +11,7 @@ x.addEventListener('change', function() {
 function myFunction(x) {
   if (x.matches) { // If media query matches
     document.getElementById('iconi').innerHTML = `
-        <i class="fa fa-bars"></i>
+        
     `;
     document.getElementById('closeNav').innerHTML = `
     &times;
