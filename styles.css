@@ -720,6 +720,27 @@ input[type="radio"]{
 .about-me--head > ol{
   margin-left: 15px;
 }
+
+.footer{
+  height: 150px;
+  width: 100%;
+  background-color: var(--clr-blue);
+}
+.ppp{
+  margin-left: 20px;
+}
+.right-footer{
+  position: relative;
+}
+.huh{
+  margin-right: 70px;
+}
+.map > .footer-map{
+  height: 100px;
+  width: 160px;
+  margin-right: 30px;
+  position: inherit;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
   .sidenav {padding-top: 15px;}
