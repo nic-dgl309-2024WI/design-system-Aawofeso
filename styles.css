@@ -681,16 +681,19 @@ input[type="radio"]{
 }
 
 .accordion .content{
-  color: var(--clr-orange);
+  color: var(--clr-primary);
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s, padding 0.5s;
 }
-.accordion input[type="radio"]:checked + la bel + .content{
+.accordion input[type="radio"]:checked + label + .content{
     max-height: 400px;
     padding: 10px 10px 20px;
+}
+.accordion input[type="radio"]:checked + label::before{
+  content: '-';
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
