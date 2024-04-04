@@ -202,6 +202,12 @@ html, body {
 .l-justify-end {
   justify-content: flex-end;
 }
+.l-justify-center {
+  justify-content: center;
+}
+.l-justify-space{
+  justify-content: space-between;
+}
 
 .l-items-start {
   align-items: flex-start;
@@ -589,6 +595,48 @@ html, body {
   border: 1px solid #4F5873;
   color: #4a544c;
   border-radius: 8px;
+}
+
+.card1{
+  background: url(images/plant1.jpg) no-repeat center;
+  background-size: cover;
+}
+.card2{
+  background: url(images/plant2.jpg) no-repeat center;
+  background-size: cover;
+}
+.card3{
+  background: url(images/access1.jpg) no-repeat center;
+  background-size: cover;
+}
+.card4{
+  background: url(images/access2.jpg) no-repeat center;
+  background-size: cover;
+}
+.card5{
+  background: url(images/soil1.jpeg) no-repeat center;
+  background-size: cover;
+}
+.card6{
+  background: url(images/soil2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.product-card {
+  min-width: 250px; /* Set min width of card */
+  height: 130px; /* Set height of card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4F5873;
+  color: #4a544c;
+  border-radius: 8px;
+}
+
+.product-flex{
+  width: 100;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
