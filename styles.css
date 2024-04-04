@@ -21,7 +21,7 @@ html, body {
   --clr-brown: #A52A2A;
   --clr-orange: #FFA07A;
   --clr-blue: #87CEEB;
-  --clr-gray: gray;
+  --clr-gray: #e3edf7;
 
 
   --font-family-head: 'Calibri';
@@ -644,6 +644,53 @@ html, body {
 
 .services > h3 {
   margin-left: 60px;
+}
+
+.accordion{
+  margin: 60px auto;
+  width: 300px;
+}
+.accordion > li{
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--clr-gray);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion > li > label{
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   font-size: 20px;
+   font-family: 500;
+   cursor: pointer;
+}
+
+label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+input[type="radio"]{
+  display: none;
+}
+
+.accordion .content{
+  color: var(--clr-orange);
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + la bel + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 640px) {
