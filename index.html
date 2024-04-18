@@ -1,260 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Outback Nursery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Outback Nursery</title>
 </head>
+
 <body>
-    <div class="topnav bg-brown text-secondary ">
-        <a class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07" href="index.html"><p class="active">OUTBACK NURSERY</p></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <div class="topnav-list">
-         <div class="dropdown">
-        <button class="u-ff-calibri dropbtn" >Product</button>
+  <div class="topnav bg-brown text-secondary ">
+
+    <a class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07" href="index.html">
+      <p class="active">OUTBACK NURSERY</p>
+    </a>
+
+    <div class="topnav-list">
+      <div class="dropdown">
+        <button class="u-ff-calibri dropbtn">Product</button>
         <div class="dropdown-content">
-            <a href="coming-soon.html">Outdoor Plants</a>
-            <a href="coming-soon.html">Plant Care Products</a>
-          </div>
-         </div>
-         <div class="dropdown">
-        <button class="u-ff-calibri dropbtn" >Services</button>
-        <div class="dropdown-content">
-            <a href="coming-soon.html">Delivery Services</a>
-            <a href="coming-soon.html">Gift Certifications</a>
-          </div>
+          <a href="coming-soon.html">Outdoor Plants</a>
+          <a href="coming-soon.html">Plant Care Products</a>
         </div>
-        <div class="dropdown">
+      </div>
+      <div class="dropdown">
+        <button class="u-ff-calibri dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="coming-soon.html">Delivery Services</a>
+          <a href="coming-soon.html">Gift Certifications</a>
+        </div>
+      </div>
+      <div class="dropdown">
         <button class="u-ff-calibri dropbtn">About Us</button>
         <div class="dropdown-content">
-            <a href="coming-soon.html">Our Story</a>
-            <a href="coming-soon.html">Meet the Team</a>
-            <a href="coming-soon.html">Sustainability Practices</a>
-            <a href="coming-soon.html">Photo Gallery</a>
-          </div>
+          <a href="coming-soon.html">Our Story</a>
+          <a href="coming-soon.html">Meet the Team</a>
+          <a href="coming-soon.html">Sustainability Practices</a>
+          <a href="coming-soon.html">Photo Gallery</a>
         </div>
-        <div class="dropdown">
-        <button class="u-ff-calibri dropbtn" >FAQs</button>
+      </div>
+      <div class="dropdown">
+        <button class="u-ff-calibri dropbtn">FAQs</button>
         <div class="dropdown-content">
-            <a href="coming-soon.html">Intro to FAQs</a>
-            <a href="coming-soon.html">General Questions</a>
-            <a href="coming-soon.html">Plant Care and Maintanance</a>
-          </div>
+          <a href="coming-soon.html">Intro to FAQs</a>
+          <a href="coming-soon.html">General Questions</a>
+          <a href="coming-soon.html">Plant Care and Maintanance</a>
         </div>
-        <div class="dropdown">
+      </div>
+      <div class="dropdown">
         <button class="u-ff-calibri dropbtn">Contact Us</button>
         <div class="dropdown-content">
-            <a href="coming-soon.html">Page Introductions</a>
-            <a href="coming-soon.html">Contact Information</a>
-            <a href="coming-soon.html">Operating Hours</a>
-            <a href="coming-soon.html">Contact Form</a>
-            <a href="coming-soon.html">Maps and Directions</a>
-            <a href="coming-soon.html">Social Media Link</a>
-          </div>
-         </div>
+          <a href="coming-soon.html">Page Introductions</a>
+          <a href="coming-soon.html">Contact Information</a>
+          <a href="coming-soon.html">Operating Hours</a>
+          <a href="coming-soon.html">Contact Form</a>
+          <a href="coming-soon.html">Maps and Directions</a>
+          <a href="coming-soon.html">Social Media Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="social__link">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
     </div>
     <div class="topnav-hamburger">
-        <a href="#" class="topnav-hamburger--icon"><i class="fa fa-bars" onclick="openNav()"></i></a>
+      <a href="#" class="topnav-hamburger--icon"><i class="fa fa-bars" onclick="openNav()"></i></a>
     </div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
+    <br><br>
+    <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">Product</button>
+    <div class="sidenav-dropdown--content">
+      <a href="coming-soon.html">Outdoor Plants</a>
+      <a href="coming-soon.html">Plant Care Products</a>
+    </div>
+    <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">Services</button>
+    <div class="sidenav-dropdown--content">
+      <a href="coming-soon.html">Delivery Services</a>
+      <a href="coming-soon.html">Gift Certifications</a>
+    </div>
+    <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">About Us</button>
+    <div class="sidenav-dropdown--content">
+      <a href="coming-soon.html">Our Story</a>
+      <a href="coming-soon.html">Meet the Team</a>
+      <a href="coming-soon.html">Sustainability Practices</a>
+      <a href="coming-soon.html">Photo Gallery</a>
+    </div>
+    <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">FAQs</button>
+    <div class="sidenav-dropdown--content">
+      <a href="coming-soon.html">Intro to FAQs</a>
+      <a href="coming-soon.html">General Questions</a>
+      <a href="coming-soon.html">Plant Care and Maintanance</a>
+    </div>
+    <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">Contact Us</button>
+    <div class="sidenav-dropdown--content">
+      <a href="coming-soon.html">Page Introductions</a>
+      <a href="coming-soon.html">Contact Information</a>
+      <a href="coming-soon.html">Operating Hours</a>
+      <a href="coming-soon.html">Contact Form</a>
+      <a href="coming-soon.html">Maps and Directions</a>
+      <a href="coming-soon.html">Social Media Link</a>
+    </div>
+
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div class="hero-image">
+    <div class="hero-image--content">
+      <h1 class="hero-image--header heading u-ff-cambria">Welcome Outback Nursery <br> & Garden Centre</h1><br><br>
+      <p class="hero-image--text u-ff-cambria">We are officially open for 2024!</p>
+    </div>
+    <div class="home-button l-mt-5">
+      <button class="bg-brown  l-p-3 text-secondary u-fw-bold">
+        <a href="coming-soon.html">About Us</a>
+      </button>
+      <button class="bg-brown l-p-3 text-secondary u-fw-bold">
+        <a href="coming-soon.html">Contact Us</a>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- about section started  -->
+  <section class="about container">
+    <div class="about__content">
+      <div class="about__text">
+        <h2 class="heading text-brown u-ff-cambria">About Our Nursery </h2>
+        <p class="description  u-ff-cambria">For the edible garden enthusiasts, we provide a range of plants from
+          berries to fruit and nut trees. Additionally, our collection extends to include climbing vines, textured
+          grasses, delicate ferns, and a diverse mix of other plants to complete any gardener's vision.</p>
+        <button class="my-button">
+          <a href="coming-soon.html">Read More</a>
+        </button>
       </div>
+    </div>
+    <div class="about__image">
+      <img src="images/f1.jpg" Nursery Garden">
+    </div>
+  </section>
+  <!-- about section ended  -->
+  <br><br>
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
-        <br><br>
-        <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">Product</button>
-        <div class="sidenav-dropdown--content">
-            <a href="coming-soon.html">Outdoor Plants</a>
-            <a href="coming-soon.html">Plant Care Products</a>
-          </div>
-        <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">Services</button>
-        <div class="sidenav-dropdown--content">
-            <a href="coming-soon.html">Delivery Services</a>
-            <a href="coming-soon.html">Gift Certifications</a>
-          </div>
-        <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">About Us</button>
-        <div class="sidenav-dropdown--content">
-            <a href="coming-soon.html">Our Story</a>
-            <a href="coming-soon.html">Meet the Team</a>
-            <a href="coming-soon.html">Sustainability Practices</a>
-            <a href="coming-soon.html">Photo Gallery</a>
-          </div>
-        <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">FAQs</button>
-        <div class="sidenav-dropdown--content">
-            <a href="coming-soon.html">Intro to FAQs</a>
-            <a href="coming-soon.html">General Questions</a>
-            <a href="coming-soon.html">Plant Care and Maintanance</a>
-          </div>
-        <button class="u-ff-calibri sidenav-dropdown" href="coming-soon.html">Contact Us</button>
-        <div class="sidenav-dropdown--content">
-            <a href="coming-soon.html">Page Introductions</a>
-            <a href="coming-soon.html">Contact Information</a>
-            <a href="coming-soon.html">Operating Hours</a>
-            <a href="coming-soon.html">Contact Form</a>
-            <a href="coming-soon.html">Maps and Directions</a>
-            <a href="coming-soon.html">Social Media Link</a>
-          </div>
-      </div>
-      
-      <!-- Use any element to open the sidenav -->
-      
-      
-      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div class="hero-image">
-            <div class="hero-image--content">
-                <h1 class="hero-image--header u-ff-cambria">Welcome Outback Nursery <br> & Garden Centre</h1><br><br>
-                <p class="hero-image--text u-ff-cambria">We are officially open for 2024!</p>
-            </div>
-        </div><br><br>
-            <div><h3 class="u-ff-calibri product-header">HOT PICKS</h3></div>
-        <div class="product-carousel">
-            <div class="product-carousel--container">
-              <div class="carousel-container--card card-1"></div>
-              <div class="carousel-container--card card-2"></div>
-              <div class="carousel-container--card card-3"></div>
-              <div class="carousel-container--card card-4"></div>
-              <div class="carousel-container--card card-5"></div>
-            </div>
-          </div><br>
-          <h3 class="u-ff-cambria product-header">You can also choose from</h3>
-          <div class="l-flex l-flex-row l-flex-nowrap product-flex l-justify-center l-justify-space">
-            <div class="l-flex l-flex-column l-flex-nowrap">
-                <h4 class="product-header u-ff-cambria">Plants</h4>
-                <div class="product-card card1"></div><br>
-                <div class="product-card card2"></div>
-            </div>
-            <div class="l-flex l-flex-column l-flex-nowrap">
-                <h4 class="product-header u-ff-cambria">Garden Accessories</h4>
-                <div class="product-card card3"></div><br>
-                <div class="product-card card4"></div>  
-            </div>
-            <div class="l-flex l-flex-column l-flex-nowrap">
-                <h4 class="product-header u-ff-cambria">Soils</h4>
-                <div class="product-card card5"></div><br>
-                <div class="product-card card6"></div>
-            </div>
-          </div><br>
-          <div class="services bg-gray">
-            <br><br>
-            <h2 class="product-header ">Our Services</h2>
-            <h3 class="u-ff-cambria ">We are known for our Trees and Shrubs!</h3>
-            <p class="u-ff-cambria product-header ">TREES include: <br><br>
-                Japanese Maples <br>
-                Fruit Trees <br>
-                Conifers and Hedging <br>
-                and
-                Ornamental and Specimen, <br>
-                
-                Dogwood, Magnolia, Stewartia, Parrotia, Cercis, Robinia, Gingko, Katsura and more...... <br>
-                
-                and 
-                Broadleaf, evergreen and deciduous <br><br>
-                
-                SHRUBS: <br>
-                
-                
-                a selection of: <br>
-                Rhododendron and Azalea <br>
-                Hydrangea <br>
-                Lilac <br>
-                Spirea <br>
-                Viburnum <br>
-                Peony <br>
-                Choisya <br>
-                Hibiscus <br>
-                Boxwood <br>
-                Sambucus <br>
-                Forsythia <br>
-                Witch Hazel <br>
-                Skimmia <br>
-                Nandina <br>
-                and more.....</p><br>
-
-            <ul class="accordion">
-                <h2 class="u-ff-cambria product-header">We also carry;</h2>
-                <li>
-                    <input type="radio" name="accordion" id="first" checked>
-                    <label for="first">JAPANESE MAPLES</label>
-                    <p class="content">
-                        Acontifolium, Ara Kawa, Aratama, Attaryi, Autumn Moon, Baldsmith, Beni Otaki, Beni Shichihenge, Berrima Bridge, Bloodgood, Butterfly, Chishio, Coonard Pygmy, Crimson Queen, Earthfire, Emperor One, Fireglow, Full Moon, Germaine's Gyration, Green Cascade, Green Filagree, Green Trompenburg, Hogyoku, Inabe Shidare, Jedeloloh Orange
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="second">
-                    <label for="second">EVERGREEN</label>
-                    <p class="content">
-                        ARBUTUS - Marina and Unedo, AUCUBA, AZALEA - assorted, BOXWOOD - assorted, CAMELLIA - assorted, CHOISYA - Ternata, DAPHNE, FATSIA, GARRYA ELLIPTICA, HEATHER, HELIX - Little Fantasy, HOLLY - Prince and Princess, Hellerii and Sky Pencil, LAVENDER, KINNICKINNICK, LAUREL - Portuguese, English, Bay Leaf, Marbled White, Standard Form, LEUCOTHOE, MAGNOLIA - Bracken's Brown Beauty, DD Blanchard and Edith Bogue,Kay Paris, Victoria, NANDINA - Bright Lights, Bonfire, Gulfstream, Firepower, OSMANTHUS - Delavyii, Goshiki, Burkwoodii,SARCOCOCCA - SKIMMIA, VIBURNUM - Davidii WINDMILL PALM
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="third">
-                    <label for="third">DECIDUOUS </label>
-                    <p class="content">
-                        ALBIZIA - Silk Tree, BEECH - Dawyck Gold, Dawyck Green and Dawyck Purple, Weeping Purple Fountain,BERBERIS - Bailone, Concorde, Rose Glow, Sunsation, Royal Cloak, Gentry, CALLICARPA, CALYCANTHUS, CARAGANA - weeping sweetshrub, CATALPA - Bean Tree, CERCIS - Forest Pansy, CHAENOMELES, CHERRY - Kwanzan, Mount Fuji, COTINUS - Royal Purple, Young Lady, Velveteeny, Royal Cloak, Old-Fashioned, Grace, CRABAPPLE - Golden Rain, Prairie Fire, Whitney, Weeping Louisa, DOGWOOD TREES - Eddie's White Wonder, Venus, Starlight, Snowtower, Wolf Eyes, Summer Fun, Kousa, Stellar, Satomi, Milky Way, June Snow, Rainbow, Cornelian Cherry, DOGWOOD shrubs - Arctic Fire, Winter Sun, EUONYMUS - Burning Bush, FORSYTHIA, FOTHERGILLA, GINGKO - Troll, Weeping Wonder, Roswitha
-                    </p>
-                </li>
-            </ul>
-            <br> <br>
-          </div>
-
-          <div class="about-me--card l-flex">
-            <div class="about-me--head">
-            <!-- add your name -->
-            <h2 class="product-header">GIFT CERTIFICATES AVAILABLE</h2><br>
-            <form>
-                <div class="form-group">
-                   <p class="u-ff-cambria"> Username </p>
-                    <input type="text" class="form-control" id="name" placeholder="Username">
-                </div><br>
-               <div class="form-group">
-                   <p class="u-ff-cambria"> Email</p>
-                    <input type="text" class="form-control" id="email" placeholder="Email">
-                </div><br>
-                <div class="form-group">
-                    <p class="u-ff-cambria">Input Content</p>
-                    <input type="textarea" class="form-control" id="phone" placeholder="Input Content">
-                </div><br>
-                <a href="#" class="btn1 bg-blue"><span>Submit</span></a><br>
-            </form>
-          </div>
-        </div><br>
+  <!-- slider section started  -->
+  <section>
+    <div>
+      <h3 class="heading text-brown u-ff-cambria product-header">HOT PICKS</h3>
+    </div>
+    <div class="slider slider--main">
+      <div class="slider__container">
+        <!-- Duplicate slides for infinite loop -->
+        <div class="slider__item">
+          <img src="images/f1.jpg" alt="Image 1" class="slider__image">
+          <h3 class="slider__title">Fiddle Leaf Fig</h3>
         </div>
-        <footer class="l-flex l-flex-row l-justify-space footer">
-            <div class="left-footer l-flex l-flex-row l-justify-space l-items-center">
-                <p class="u-ff-cambria">© 2024 Outback Nursery</p>
-                <p class="u-ff-cambria ppp">Privacy Policy | Terms &amp; Conditions</p>
-            </div>
-            <div class="right-footer l-flex l-flex-row l-justify-space l-items-center">
-                <div class="huh">
-                <h4 class="u-ff-cambria">Visit Us</h4><br>
-                    <p class="c-footer__text">6016 Headquarters Rd</p>
-                    <p class="c-footer__text">Courtenay, BC V9J 1M7</p>
-                </div>
-                <div class="map">
-                    <!--Google map-->
-                <iframe id="map" class="footer-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.806904334595!2d-125.05348338778744!3d49.75207693728265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dcfbd232dd%3A0x8790393154738312!2s6016%20Headquarters%20Rd%2C%20Courtenay%2C%20BC%20V9J%201M7!5e0!3m2!1sen!2sca!4v1711649277144!5m2!1sen!2sca"
-                width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </footer>
-      <script src="main.js"></script>
+        <div class="slider__item">
+          <img src="images/f2.jpg" alt="Image 2" class="slider__image">
+          <h3 class="slider__title">Monstera Deliciosa</h3>
+        </div>
+        <div class="slider__item">
+          <img src="images/f3.jpg" alt="Image 3" class="slider__image">
+          <h3 class="slider__title">Snake Plant (Sansevieria)</h3>
+        </div>
+        <div class="slider__item">
+          <img src="images/f4.jpg" alt="Image 4" class="slider__image">
+          <h3 class="slider__title">Pothos (Epipremnum aureum)</h3>
+        </div>
+        <div class="slider__item">
+          <img src="images/f5.jpg" alt="Image 5" class="slider__image">
+          <h3 class="slider__title">Peace Lily (Spathiphyllum)</h3>
+        </div>
+
+        <!-- Add more slider items as needed -->
+      </div>
+      <button class="slider__prev slider__control" onclick="prevSlide()">&#9664;</button>
+      <button class="slider__next slider__control" onclick="nextSlide()">&#9654;</button>
+      <div class="slider__dots"></div>
+    </div>
+  </section>
+  <!-- slider section end  -->
+
+  <!-- Service section started  -->
+  <section class="services ">
+    <div>
+      <h3 class="heading text-brown u-ff-cambria product-header">Our Services</h3>
+    </div>
+    <div class="services__container">
+      <div class="service">
+        <div class="service__icon">🌱</div>
+        <h3 class="service__title u-ff-cambria">Plant Care</h3>
+        <p class="service__description description">We offer expert care for your plants, including watering, pruning,
+          and fertilizing, to ensure they thrive and stay healthy.</p>
+        <ul class="service__list description">
+          <li>Watering</li>
+          <li>Pruning</li>
+          <li>Fertilizing</li>
+        </ul>
+        <button class="my-button">
+          <a href="coming-soon.html">Details</a>
+        </button>
+      </div>
+
+      <div class="service">
+        <div class="service__icon">🌻</div>
+        <h3 class="service__title u-ff-cambria">Landscaping</h3>
+        <p class="service__description description">Transform your outdoor space with our landscaping services,
+          including garden design, planting, and pathways.</p>
+        <ul class="service__list description">
+          <li>Garden Design</li>
+          <li>Planting</li>
+          <li>Pathways</li>
+        </ul>
+        <button class="my-button">
+          <a href="coming-soon.html">Details</a>
+        </button>
+      </div>
+
+      <div class="service">
+        <div class="service__icon">🌳</div>
+        <h3 class="service__title u-ff-cambria">Tree Care</h3>
+        <p class="service__description description">Keep your trees healthy and beautiful with our tree care services,
+          including pruning, trimming, and disease management.</p>
+        <ul class="service__list description">
+          <li>Pruning</li>
+          <li>Trimming</li>
+          <li>Disease Management</li>
+        </ul>
+        <button class="my-button">
+          <a href="coming-soon.html">Details</a>
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <!-- Service section end  -->
+  <br>
+
+  <!-- gift card section started  -->
+  <section class="gift-card">
+    <div class="gift-card__container">
+      <div class="gift-card__image">
+        <img src="images/plant1.jpg" alt="Gift Card Image">
+      </div>
+      <div class="gift-card__form">
+        <h2 class="heading text-brown u-ff-cambria product-header">Get a Gift Card</h2>
+        <form class="gift-card__form-inner">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="amount">Gift Card Amount</label>
+            <select id="amount" name="amount" required>
+              <option value="10">$10</option>
+              <option value="25">$25</option>
+              <option value="50">$50</option>
+              <option value="100">$100</option>
+            </select>
+          </div>
+          <button type="submit" class="gift-card__submit-button">Get My Gift Card</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- gift card section end -->
+
+
+  <!-- Faq section  -->
+  <section class="faq">
+    <h1 class="heading text-brown ">Some Frequently Asked Questions</h1>
+    <div class="faq__item">
+      <div class="faq__question" data-toggle="faq1">How often should I water my plants?</div>
+      <div class="faq__answer" id="faq1">Watering requirements vary depending on the type of plant. It's essential to
+        check the soil moisture before watering. Generally, plants need watering when the top inch of soil feels dry.
+      </div>
+    </div>
+    <div class="faq__item">
+      <div class="faq__question" data-toggle="faq2">What soil should I use for my garden?</div>
+      <div class="faq__answer" id="faq2">Choosing the right soil is crucial for the health of your plants. Use a
+        well-draining soil mix rich in organic matter, such as compost or peat moss, for optimal growth.</div>
+    </div>
+    <div class="faq__item">
+      <div class="faq__question" data-toggle="faq3">How can I prevent pests and diseases in my garden?</div>
+      <div class="faq__answer" id="faq3">Maintaining good garden hygiene and practicing proper plant care techniques can
+        help prevent pests and diseases. Regularly inspect your plants for signs of infestation or disease and take
+        appropriate measures, such as using organic pesticides or removing affected plants.</div>
+    </div>
+    <button class="toggle-button my-button" id="toggleAll">Toggle All Answers</button>
+  </section>
+
+  <br> <br>
+
+  <!-- Review section started  -->
+  <section class="review">
+    <button class="prev" onclick="plusSlides(-1)">
+      <p>❮ </p>
+    </button>
+    <div class="slider-container">
+      <div class="slide">
+        <img src="images/review1.png" alt="Client 1">
+        <h3>John Doe</h3>
+        <p>CEO, Company ABC</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo ac risus ultrices viverra eget nec
+          odio."</p>
+      </div>
+      <div class="slide">
+        <img src="images/review2.png" alt="Client 2">
+        <h3>Jane Smith</h3>
+        <p>Manager, Company XYZ</p>
+        <p>"Sed eget ligula ac lacus ullamcorper dignissim. Sed tristique metus at justo ultricies dignissim."</p>
+      </div>
+      <div class="slide">
+        <img src="images/review3.png" alt="Client 3">
+        <h3>Michael Johnson</h3>
+        <p>Founder, Company DEF</p>
+        <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce consequat
+          consequat nunc, vel dictum orci efficitur eu."</p>
+      </div>
+    </div>
+
+    <button class="next" onclick="plusSlides(1)">
+      <p>❯</p>
+    </button>
+
+  </section>
+
+  <!-- Footer section  -->
+  <footer>
+    <div class="f_top">
+      <div class="f_middle">
+        <div class="f_title">
+          <p class="f_name">OutBack Nursery</p>
+        </div>
+        <div class="f_links">
+          <p class="quick">Quick Links</p>
+          <ul class="footer-list">
+            <li class="footer-item"><a href="coming-soon.html" class="footer-link">Home</a></li>
+            <li class="footer-item"><a href="coming-soon.html" class="footerlink">About</a></li>
+            <li class="footer-item"><a href="coming-soon.html" class="footer-link">Services</a></li>
+            <li class="footer-item"><a href="coming-soon.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="f_contact">
+          <p class="f_contact_itmes">
+            <span class="u-fw-bold">Email: </span> <a href="mailto:yourname@example.com">outlook@contact.com</a>
+          </p>
+          <p class="f_contact_itmes">
+            <span class="u-fw-bold">Phone: </span> <a href="tel:+1234567890">012454545</a>
+
+          </p>
+          <p class="f_contact_itmes">
+            <span class="u-fw-bold">Location: </span> 6016 Headquarters Rd, Canada
+          </p>
+        </div>
+        <div class="f_map">
+          <div style="width: 100%"><iframe width="100%" height="180" frameborder="0" scrolling="no" marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=6016%20Headquarters%20Rd,%20Courtenay,%20BC%20V9J%201M7,%20Canada+(Nursery%20Outlook)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.gps.ie/">gps devices</a></iframe></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="f_copy">
+      <p class="f_copy_text">© 2024 Outback Nursery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
