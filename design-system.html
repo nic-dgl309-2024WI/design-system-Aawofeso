@@ -1,95 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="design-system.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Design-system</title>
-  </head>
-  <body>
-     <!-- Creating the top navbar -->
-     <div class="navbar bg-brown u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
-        <div class="navbar__col-logo text-blue">
-        <h2 class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07 active"><a href="design-system.html">Design System</a></h2>
-        </div>
-        <div class="navbar__col-list">
-            <ul class="col__list text-blue">
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links --> 
-                <div>
-                    <a href="javascript:void(0);" id="iconi" class="topnav-hamburger--icon" ><i class="fa fa-bars" onclick="openNav()"></i></a>
-                  </a>
-                </div> 
-                <a href="about-me.html"><li>About Me</li></a>
-                <a href="#"><li>Demo Site</li></a>
-            </ul>
-        </div>
 
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <!-- Creating the sidenav -->
-    <div id="mySidenav" class="sidenav bg-blue text-secondary">
+<body>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link is-active" href="design-system.html">Design
+                    System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="index.html"
+                                target="_blank">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+        <!-- Mobile nanvbar & Sidebar (for desktop)-->
+        <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="index.html"
+                            target="_blank">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="color.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">03
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="containers.html">04
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="images.html">05
+                            Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="interactive.html">06
+                            Interactive</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="navbars.html">07
+                            Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="breadcrumbs.html">08
+                            Breadcrumbs</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="hero.html">09
+                            Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="carousel.html">10
+                            Carousel &amp; Pagination</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="footer.html">11
+                            Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="cards.html">12
+                            Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="forms.html">13
+                            Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="accordion.html">14
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="lists.html">15
+                            Lists</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
 
-      <br><br><br>
-      <!-- showing the topnav links in the mobile version -->
-      <div class="sidenav__mobile text-secondary">
-          <a href="about-me.html"><li>About Me</li></a>
-          <a href="#"><li>Demo Site</li></a><br><br>
-      </div>
+        <main>
+            <section class="side_body">
+                <h1 class="u-heading--2 u-fs-xxx-large l-py-3 wrapper-center-padding u-text-center">Welcome to the
+                    Outback Nursery Design System</h1>
+                <p class="u-body-text u-fw-light text-wrapper zero-auto">Greetings, creators and innovators! Welcome to
+                    the Oasis Flora Design System, your all-encompassing toolkit for shaping digital and visual
+                    creations that capture the essence of Oasis Flora's natural allure and appeal. Whether you're
+                    embarking on the development of a website, application, or promotional content for the nursery, this
+                    design system is your ultimate companion for seamless integration and consistent outcomes.
+                </p>
+                <div class="l-flex-container l-flex-justify-between width-90--mobile">
+                    <div class="l-mr-2">
+                        <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-1 u-text-center">What's Included:</h2>
+                        <ol class="l-pb-2 l-ml-1-5">
+                            <li class="l-pb-1">
+                                <p class="text-wrapper u-body-text"><strong>Documentation Portal: </strong> Dive into
+                                    our extensive documentation portal, your portal to grasping and implementing every
+                                    aspect of the Oasis Flora Design System. Here, you'll discover directives for
+                                    applying the system across diverse digital and visual design ventures.</p>
+                            </li>
+                            <li class="l-pb-1">
+                                <p class="text-wrapper u-body-text"><strong>GitHub Repository: </strong> Gain access to
+                                    the comprehensive GitHub repository housing the Oasis Flora Design System's CSS
+                                    stylesheet. This repository serves as a central hub for developers and designers
+                                    alike, offering effortless access to the latest iteration of the CSS framework.
+                                    Simply clone or fork the repository to seamlessly incorporate the design system into
+                                    your projects.</p>
+                            </li>
+                            <li class="l-pb-1">
+                                <h3 class="u-heading--5"></h3>
+                                <p class="text-wrapper u-body-text"><strong>Demonstration Site: </strong> Delve into the
+                                    demonstration site, where you can experience firsthand how each facet of the design
+                                    system seamlessly integrates into real-world scenarios. From harmonious color
+                                    palettes to versatile structural elements, immerse yourself in the Oasis Flora
+                                    design system in action, igniting inspiration for your own endeavors.
+                                </p>
+                            </li>
+                            <li class="l-pb-1">
+                                <p class="text-wrapper u-body-text"><strong>About the Creator:</strong> Discover the
+                                    mind behind the Oasis Flora Design System. This section provides insights into the
+                                    architect of this invaluable toolkit.</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="l-ml-2">
+                        <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-1 u-text-center width-80">Why Opt for this
+                            Design System</h2>
+                        <ul>
+                            <li>
+                                <p class="text-wrapper u-body-text list-item"><strong>Authenticity: </strong> Grounded
+                                    in the innate allure and charm of Oasis Flora, the design system delivers an
+                                    authentic representation of the brand's identity and ethos.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="text-wrapper u-body-text list-item"><strong>Efficiency: </strong>Rooted in the
+                                    natural beauty and charm of Outback Nursery, the design system offers a genuine
+                                    reflection of the brand identity and values.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="u-ff-serif u-fs-large u-fw-light u-text-center l-py-2">
+                    Let's infuse the digital landscape with the splendor of the great outdoors, one pixel at a time.
+                </p>
 
-  <!-- Close button function -->
-  
-  <a href="javascript:void(0);" id="closeNav" class="closebtn text-secondary" onclick="myFunction(x,y); sideAni(x,y)"></a>
-  <!-- Adding contents to sidenav -->
-  <ul class="sidenav__list text-secondary">
-    <a href="#"><strong>Branding</strong></a>
-    <a href="colours.html"><li>Colours</li></a>
-    <a href="typography.html"><li>Typography</li></a>
-    <a href="#"><li>Logo</li></a>
-    </ul><br>
-    <ul class="sidenav__list text-secondary">
-        <a href="#"><strong>Utilities</strong></a>
-        <a href="spacing.html"><li>Spacing</li></a>
-        <a href="container.html"><li>Containers</li></a>
-        <a href="#"><li>Images</li></a>
-        <a href="#"><li>Interactive</li></a>
-        <a href="#"><li>Feedback</li></a>
-        </ul><br>
-        <ul class="sidenav__list text-secondary">
-            <a href="#"><strong>Navigation</strong></a>
-            <a href="#"><li>Navbars</li></a>
-            <a href="#"><li>Breadcrumbs</li></a>
-            <a href="#"><li>Pagination</li></a>
-            </ul><br>
-            <ul class="sidenav__list text-secondary">
-            <a href="#"><strong>Blocks</strong></a>
-            <a href="#"><li>Hero</li></a>
-            <a href="#"><li>Carousel</li></a>
-            <a href="#"><li>Slats</li></a>
-            <a href="#"><li>Footer</li></a>
-            </ul><br>
-            <ul class="sidenav__list text-secondary">
-                <a href="#"><strong>Components</strong></a>
-                <a href="#"><li>Cards</li></a>
-                <a href="#"><li>Forms</li></a>
-                <a href="#"><li>Accordion</li></a>
-                <a href="#"><li>Lists</li></a>
-                </ul><br><br><br><br><br><br><br><br><br>
-  
-  </div>
-  <div href="javascript:void(0);" id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 " onclick="sideAni(x,y)"></div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <script src="design-system.js"></script>
+</body>
 
-    <!-- Adding javascript to index -->
-    <script src="main.js"></script>
-  </body>
 </html>

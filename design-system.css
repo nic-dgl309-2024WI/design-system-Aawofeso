@@ -1,295 +1,1372 @@
-/*  used to import variables from another css file */
-  @import "styles.css";
+* {
+    margin: 0;
+    padding: 0;
+    border: auto;
+}
 
-/*  Formatting navbar */
-.navbar{
+
+/*  styling html and body */
+html,
+body {
+    height: 100%;
+    background: var(--clr-white);
+    line-height: 1.5rem;
+}
+
+/*  Declaring global variables */
+:root {
+    --clr-primary: #000000;
+    --clr-secondary: #ffffff;
+    --clr-green-100: #228B22;
+    --clr-green-200: #90EE90;
+    --clr-brown: #A52A2A;
+    --clr-orange: #FFA07A;
+    --clr-blue: #87CEEB;
+    --clr-gray: #e3edf7;
+
+
+    --font-family-head: 'Calibri';
+    --font-family-body: 'Cambria';
+    --font-size-head: 30px;
+    --font-size-body: 18px;
+    --font-weight-head: bold;
+    --font-weight-body: 500;
+    --letter-spacing-head: 0.07em;
+    --letter-spacing-body: 0.02em;
+    --letter-spacing-type: 0.4em;
+}
+
+
+.text-blue {
+    color: var(--clr-blue);
+}
+
+.text-green-200 {
+    color: var(--clr-green-200);
+}
+
+.text-primary {
+    color: var(--clr-primary);
+}
+
+.text-secondary {
+    color: var(--clr-secondary);
+}
+
+.text-orange {
+    color: var(--clr-orange);
+}
+
+.text-brown {
+    color: var(--clr-brown);
+}
+
+.text-green-100 {
+    color: var(--clr-green-100);
+}
+
+.bg-brown {
+    background-color: var(--clr-brown);
+}
+
+.bg-green-100 {
+    background-color: var(--clr-green-100);
+}
+
+.bg-blue {
+    background-color: var(--clr-blue);
+}
+
+.bg-primary {
+    background-color: var(--clr-primary);
+}
+
+.bg-secondary {
+    background-color: var(--clr-secondary);
+}
+
+.bg-green-200 {
+    background-color: var(--clr-green-200);
+}
+
+.bg-orange {
+    background-color: var(--clr-orange);
+}
+
+.text-gray {
+    color: var(--clr-gray);
+}
+
+.bg-gray {
+    background-color: var(--clr-gray);
+}
+
+
+
+.u-ff-calibri {
+    font-family: var(--font-family-head);
+}
+
+.u-ff-cambria {
+    font-family: var(--font-family-body);
+}
+
+.u-fs-18 {
+    font-size: var(--font-size-body);
+}
+
+.u-fs-30 {
+    font-size: var(--font-size-head);
+}
+
+.u-fw-bold {
+    font-weight: var(--font-weight-head);
+}
+
+h1,
+button {
+    font-family: var(--font-size-head);
+}
+
+p,
+span {
+    font-family: var(--font-family-body);
+}
+
+.u-fw-500 {
+    font-weight: var(--font-weight-body);
+}
+
+.u-letter-spacing-02 {
+    letter-spacing: var(--letter-spacing-body);
+}
+
+.u-letter-spacing-07 {
+    letter-spacing: var(--letter-spacing-head);
+}
+
+.u-letter-spacing-4 {
+    letter-spacing: var(--letter-spacing-type);
+}
+
+
+/* Padding classes */
+.l-p-0 {
+    padding: 0;
+}
+
+.l-p-1 {
+    padding: 0.25rem;
+}
+
+.l-p-2 {
+    padding: 0.5rem;
+}
+
+.l-p-3 {
+    padding: 1rem;
+}
+
+.l-p-4 {
+    padding: 1.5rem;
+}
+
+.l-p-5 {
+    padding: 3rem;
+}
+
+/* Padding top */
+.l-pt-0 {
+    padding-top: 0;
+}
+
+.l-pt-1 {
+    padding-top: 0.25rem;
+}
+
+.l-pt-2 {
+    padding-top: 0.5rem;
+}
+
+.l-pt-3 {
+    padding-top: 1rem;
+}
+
+.l-pt-4 {
+    padding-top: 1.5rem;
+}
+
+.l-pt-5 {
+    padding-top: 3rem;
+}
+
+/* Padding bottom */
+.l-pb-0 {
+    padding-bottom: 0;
+}
+
+.l-pb-1 {
+    padding-bottom: 0.25rem;
+}
+
+.l-pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.l-pb-3 {
+    padding-bottom: 1rem;
+}
+
+.l-pb-4 {
+    padding-bottom: 1.5rem;
+}
+
+.l-pb-5 {
+    padding-bottom: 3rem;
+}
+
+/* Padding left */
+.l-pl-0 {
+    padding-left: 0;
+}
+
+.l-pl-1 {
+    padding-left: 0.25rem;
+}
+
+.l-pl-2 {
+    padding-left: 0.5rem;
+}
+
+.l-pl-3 {
+    padding-left: 1rem;
+}
+
+.l-pl-4 {
+    padding-left: 1.5rem;
+}
+
+.l-pl-5 {
+    padding-left: 3rem;
+}
+
+/* Padding right */
+.l-pr-0 {
+    padding-right: 0;
+}
+
+.l-pr-1 {
+    padding-right: 0.25rem;
+}
+
+.l-pr-2 {
+    padding-right: 0.5rem;
+}
+
+.l-pr-3 {
+    padding-right: 1rem;
+}
+
+.l-pr-4 {
+    padding-right: 1.5rem;
+}
+
+.l-pr-5 {
+    padding-right: 3rem;
+}
+
+/* Margin classes follow a similar pattern */
+.l-m-0 {
+    margin: 0;
+}
+
+.l-m-1 {
+    margin: 0.25rem;
+}
+
+.l-m-2 {
+    margin: 0.5rem;
+}
+
+.l-m-3 {
+    margin: 1rem;
+}
+
+.l-m-4 {
+    margin: 1.5rem;
+}
+
+.l-m-5 {
+    margin: 3rem;
+}
+
+.l-mt-0 {
+    margin-top: 0;
+}
+
+.l-mt-1 {
+    margin-top: 0.25rem;
+}
+
+.l-mt-2 {
+    margin-top: 0.5rem;
+}
+
+.l-mt-3 {
+    margin-top: 1rem;
+}
+
+.l-mt-4 {
+    margin-top: 1.5rem;
+}
+
+.l-mt-5 {
+    margin-top: 3rem;
+}
+
+.l-mb-0 {
+    margin-bottom: 0;
+}
+
+.l-mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.l-mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.l-mb-3 {
+    margin-bottom: 1rem;
+}
+
+.l-mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.l-mb-5 {
+    margin-bottom: 3rem;
+}
+
+
+.l-ml-0 {
+    margin-left: 0;
+}
+
+.l-ml-1 {
+    margin-left: 0.25rem;
+}
+
+.l-ml-2 {
+    margin-left: 0.5rem;
+}
+
+.l-ml-3 {
+    margin-left: 1rem;
+}
+
+.l-ml-4 {
+    margin-left: 1.5rem;
+}
+
+.l-ml-5 {
+    margin-left: 3rem;
+}
+
+.l-mr-0 {
+    margin-right: 0;
+}
+
+.l-mr-1 {
+    margin-right: 0.25rem;
+}
+
+.l-mr-2 {
+    margin-right: 0.5rem;
+}
+
+.l-mr-3 {
+    margin-right: 1rem;
+}
+
+.l-mr-4 {
+    margin-right: 1.5rem;
+}
+
+.l-mr-5 {
+    margin-right: 3rem;
+}
+
+/* creating container classes */
+.containerr {
     width: 100%;
-    height: 75px;
-    position: fixed;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.container-fluid {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+/* Flex classes */
+.l-flex {
     display: flex;
 }
 
+.l-flex-row {
+    flex-direction: row;
+}
 
-/*  Styling the index page/design system */
-.navbar__col-logo {
-    width: auto;
-    height: auto;
-    margin: auto;
+.l-flex-column {
+    flex-direction: column;
+}
+
+.l-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.l-flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.l-justify-start {
+    justify-content: flex-start;
+}
+
+.l-justify-end {
+    justify-content: flex-end;
+}
+
+.l-justify-center {
+    justify-content: center;
+}
+
+.l-justify-space {
+    justify-content: space-between;
+}
+
+.l-items-start {
+    align-items: flex-start;
+}
+
+.l-items-end {
+    align-items: flex-end;
+}
+
+.l-items-center {
     align-items: center;
+}
+
+.l-content-start {
+    align-content: flex-start;
+}
+
+.l-content-end {
+    align-content: flex-end;
+}
+
+.l-content-center {
+    align-content: center;
+}
+
+.l-flex-none {
+    flex: none;
+}
+
+.l-flex-grow {
+    flex-grow: 1;
+}
+
+.l-flex-shrink {
+    flex-shrink: 1;
+}
+
+.l-grid {
+    display: grid;
+}
+
+.l-grid-cols {
+    grid-template-columns: auto auto auto;
+}
+
+.l-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.l-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.l-grid-rows {
+    grid-template-rows: auto auto auto;
+}
+
+.l-grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.l-grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.l-item-span-2 {
+    grid-column: span 2;
+}
+
+.l-item-span-3 {
+    grid-column: span 3;
+}
+
+.l-item-start-2 {
+    grid-column-start: 2;
+}
+
+.l-item-end-3 {
+    grid-column-end: 3;
+}
+
+
+.l-max-w-320 {
+    max-width: 320px;
+}
+
+.l-max-w-384 {
+    max-width: 384px;
+}
+
+.l-max-w-448 {
+    max-width: 448px;
+}
+
+.l-max-w-512 {
+    max-width: 512px;
+}
+
+.l-max-w-576 {
+    max-width: 576px;
+}
+
+.l-max-w-672 {
+    max-width: 672px;
+}
+
+.l-max-w-768 {
+    max-width: 768px;
+}
+
+.l-max-w-896 {
+    max-width: 896px;
+}
+
+.l-max-w-1024 {
+    max-width: 1024px;
+}
+
+.l-max-width {
+    max-width: 100%;
+}
+
+.l-full-width {
+    width: 100%;
+}
+
+.l-full-width-img {
+    width: 100%;
+}
+
+.l-full-width-bg {
+    width: 100%;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+}
+
+.social__link {
+    display: block;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: (var(--clr-secondary));
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    display: block;
-    justify-content: end;
-    align-content: space-between;
-    transition: all 0.5s ease;
-    flex: 50%;
-    float: left;
+    font-size: 17px;
 }
 
-
-/* Styling the contents in topnav  */
-  .navbar__col-list a{
-    width: auto;
-    height: auto;
-    margin: auto;
-    align-items: center;
-    text-decoration: none;
-    display: block;
-    align-content: space-between;
-    transition: all 0.5s ease;
+.topnav-hamburger {
     float: right;
-    flex: 50%;
-}
-
-/*  styling about-me and demo site */
-.navbar__col-list a li{
-    list-style: none;  
-    padding: 14px 16px; 
-}
-
-
-
-  /* Removing the underline effect in href  */
-  a{
-    text-decoration: none;
-    color: inherit;
-    outline: 0;
-  }
-
- /* The side navigation menu */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 75px;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  display: block;
-  }
-  
-  .closebtn {
-    background-color: var(--clr-green-100);
-  }
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    transition: 0.3s;
-  }
-  
- 
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .sidenav__mobile {
     display: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: (var(--clr-primary));
+    color: (var(--clr-green-200));
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: (var(--clr-brown));
+}
+
+.topnav-hamburger--icon {
+    display: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: var(--clr-primary);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.active {
+    color: var(--clr-orange);
+}
+
+/* Hovers over contents in the top navbar  */
+a:hover {
+    color: var(--clr-green-200);
+}
+
+/** COMPONENTS **/
+
+/* Navigation */
+
+/* Rules for desktop navbar component */
+
+.c-desktop-navbar {
+    padding-bottom: 1em;
+    background-color: #FFFFFF;
+}
+
+.c-desktop-menu__item {
+    transition: all .2s ease-in-out;
+    transform-origin: left top;
+}
+
+
+.c-desktop-menu__link {
+    color: var(--clr-primary-300);
+    text-decoration: none;
+}
+
+.c-desktop-menu__link:hover {
+    text-decoration: var(--td-underline);
+}
+
+.c-desktop-menu ul {
+    list-style: none;
+}
+
+.c-desktop-menu li {
+    margin-right: 20px;
+}
+
+/* Rules for Mobile navbar */
+
+.c-mobile-navbar {
+    background-color: var(--clr-primary-60);
+}
+
+.c-mobile-menu__item {
+    transition: all .2s ease-in-out;
+    transform-origin: left top;
+}
+
+
+.c-mobile-menu__link {
+    color: var(--clr-primary-300);
+}
+
+.c-mobile-menu__link:hover {
+    text-decoration: var(--td-underline);
+}
+
+/* Rules for side navbar */
+
+.c-sidemenu__heading {
+    color: var(--clr-primary-300);
+    padding: .8em 0;
+}
+
+.c-sidemenu__item {
+    color: var(--clr-primary-300);
+}
+
+.c-sidemenu__item {
+    transition: all .2s ease-in-out;
+    transform-origin: left top;
+}
+
+.c-sidemenu__item a {
+    text-decoration: none;
+}
+
+
+/* Fixed table layout */
+
+.l-table--col-width-112 {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.l-table--col-width-112 td:not(:last-child) {
+    width: 120px;
+    border-right: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+.l-table--col-width-112 td:last-child {
+    width: 112px;
+    padding: 4px;
+    text-align: center;
+}
+
+.l-table--col-width-112 tr:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+/* Constrain width classes */
+.c-swatch {
+    min-width: 24rem;
+    max-width: 24rem;
+}
+
+.width-325-550 {
+    min-width: 325px;
+    max-width: 550px;
+}
+
+
+
+/* To allow break in paragraph for long string of characters */
+.letter-break {
+    max-width: 100vw;
+    word-break: break-all;
+}
+
+h1,
+button {
+    font-family: var(--font-size-head);
+}
+
+p,
+span {
+    font-family: var(--font-family-body);
+}
+
+/* Tables */
+
+.c-table {
+    border-collapse: collapse;
+    font-family: var(u-ff-sans-serif);
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.c-table td,
+.c-table th {
+    padding: var(--rem-space-05);
+    text-align: center;
+}
+
+.c-table th {
+    background-color: var(--clr-primary-80);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.c-table td:not(:last-child),
+.c-table th:not(:last-child) {
+    border-right: 1px solid;
+}
+
+.c-table tr:not(:last-child),
+.c-table tr:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+/* Colour Swatches */
+
+.c-swatch {
+    min-width: 18rem;
+    max-width: 18rem;
+}
+
+
+/* Drawing clockwise border Animation */
+/* animation-fill-mode set to forwards to ensure that border stays at 100% keyframe value -- with help from: https://www.joshwcomeau.com/animation/keyframe-animations/ */
+
+/* c-swatch:hover {
+    animation: drawBorder 1.5s ease-in forwards;
+}
+  
+  @keyframes drawBorder {
+    0% {
+      border-top-color: transparent;
+    }
+    15% {
+      border-top-color: black;
+    }
+    35% {
+        border-right-color: black;
+    }
+    55% {
+      border-bottom-color: black;
+    }
+    75% {
+      border-left-color: black;
+    }
+    100% {
+      border-color: black;
+    }
   }
 
-  .font-use_head{text-align: center;}
 
-  .font-use__table {
-    width: 100%;
+/* Draw border on hover */
+/*.u-drawborder {
+    border: 1.5px solid transparent;
+}
+
+.u-drawborder:hover {
+    animation: drawBorder 1.5s ease-in forwards;
+}
+
+*/
+
+/** STATES **/
+
+/* Visibility */
+
+/* Hidden on mobile */
+.is-hidden-mobile {
+    display: none;
+}
+
+/* Show mobile menu when hamburger icon toggled */
+.is-visible-dropdown-menu {
+    display: initial;
+}
+
+/* Active page */
+
+.is-active {
+    color: #90EE90;
+    font-weight: bold;
+}
+
+/** LAYOUT **/
+
+/* Flex Layout */
+.l-flex {
+    display: flex;
+}
+
+/* Flex Layout with space in between */
+.l-flex-separate {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HTML Code */
+
+.code-container {
+    background-color: var(--clr-primary-40);
+    padding: var(--rem-space-1-5);
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    background-color: var(--clr-primary-80);
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: var(--clr-secondary-200);
+    color: var(--clr-soft-white);
+}
+
+pre {
+    margin: 0;
+}
+
+/* Lists */
+
+.list-item {
+    padding-left: var(--rem-space-2-5);
+    background-image: url(icons/leaf-bullet-point.svg);
+    background-repeat: no-repeat;
+    background-position: 0 .3rem;
+    background-size: 16px 16px;
+    margin-bottom: 1rem;
+}
+
+/** MEDIA QUERY - DESKTOP LAYOUT **/
+
+/* For aside body  */
+.side_body {
+    padding: 20px;
+}
+
+/* For color page  */
+.circular-swatch {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.colors_div {
+    border: 1px solid var(--clr-brown);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.color_group {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    grid-gap: 20px;
+    /* Gap between columns */
+}
+
+/* for typography page  */
+.font-use__table {
+    width: 80%;
     border-collapse: collapse;
     margin-bottom: 20px;
     text-align: center;
     padding: 8px;
-    
-
-  }
-  .Calibri--font_util{
-    margin-left: 70px;
-  }
-  .font-use__table tr:hover {
-    background-color: #eaeaea;
 }
 
-  /*  use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 5px;
-}
-
-.typeface__calibri-head{
-  text-align: center;
-}
-.typeface__calibri--font{
-  text-align: center;
-}
-.typeface__cambria-head{
-  text-align: center;
-}
-.typeface__cambria--font{
-  text-align: center;
-}
-
-.table-head{
-  text-align: center;
-}
-
-img{
-  border-style: solid;
-  border-width: 15px;
-  border-radius: 360%;
-  margin-left: 15px;
-  border-color: var( --clr-blue);
-  
-}
-
-.about-me--head{
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  font-family: 'cambria';
-}
-
-.about-me--content{
-  margin-left: 20px;
-  font-family: 'Cambria';
-  font-style: italic;
-  margin-top: 10px;
-}
-
-.about-me--content > ul{
-  margin-left: 30px;
-}
-
-.about-me--card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin-top: 95px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 15px;
-  border-radius: 20px;
-}
-.about-me--card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border-radius: 10px 10px 10px 10px;
-}
-.card-left {
-  /* Add shadows to create the "card" effect */
-  margin-top: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 300px;
-  margin-left: 50px;
-  margin-right: 50px;
-  flex: 50%;
-  border-radius: 10px;
-}
-
-.containers{
-  margin-top: 95px;
-}
-
-.card-right {
-  /* Add shadows to create the "card" effect */
-  margin-top: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 300px;
-  margin-left: 50px;
-  margin-right: 50px;
-  flex: 50%;
-  border-radius: 10px;
-}
-
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border-radius: 10px 10px 10px 10px;
-}
-
-/* Add some padding inside the card container */
-
-
-.card_swatch--right{
-  height: 100px;
-  width: 120px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 15px;
-  flex: 50%;
-}
-
-.container{
-  flex: 50%;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.card_swatch--left{
-
-  height: 100px;
-  width: 30%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 15px;
-  flex: 50%;
-}
-.color-swatches{
-  display: flex;
-  flex-direction: row nowrap;
-}
-.jet{
-  display: flex;
-  flex-direction: row nowrap;
-}
-
-.head{
-  margin-top: 80px;
-  text-align: center;
-}
-
-.Combinations--flex{
-  display: flex;
-  flex-direction: row nowrap;
-}
-
-.Combinations--flex > div{
-  flex: 50%;
-  border-radius: 15px;
-  margin: 10px;
-  text-align: center;
-}
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-   @media screen and (max-width: 600px) {
-    .sidenav {
-      padding-top: 15px;
-      position:fixed;
-      overflow-x: hidden;
-    }
-    .sidenav a {font-size: 18px;}
-    .col__list li {display: none;}
-    .sidenav__mobile{
-        display: block;
-        list-style: none;
-    }
-  }
-
-  .closebtn {
-    display: block;
-  }
- /* #iconi{ 
-    display: block;
-    opacity: 1;
+.table-head {
     font-size: 25px;
-    padding: 10px 16px;
-    right: 0;
-    top: 0;
-  }
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* for spacing  */
+.font-use__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.font-use__table th,
+.font-use__table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.font-use__table th {
+    background-color: #f2f2f2;
+}
+
+.font-use__table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.font-use__table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* for interactive  */
+.ds-content {
+    padding: 20px;
+}
+
+.ds-code-snippet-container {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.ds-code-snippet-container pre {
+    margin: 0;
+    padding: 20px;
+}
+
+.ds-copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ds-copy-btn:hover {
+    background-color: #0056b3;
+}
+
+/* for navbar  */
+.ds-content {
+    padding: 20px;
+}
+
+.n-top-navbar,
+.n-mobile-sidenav {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.ds-code-snippet-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.ds-code-snippet-container pre {
+    margin: 0;
+    padding: 10px;
+}
+
+.ds-copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ds-copy-btn:hover {
+    background-color: #0056b3;
+}
+
+.laptop-menu {
+    width: 80%;
+}
+
+.card-img {
+    width: 50%;
+}
+
+/* for about me  */
+.about-me--head h1 {
+    color: brown;
+}
+
+.about_img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about_description {
+    margin: 20px 0;
+    width: 50%;
+}
+
+.my_heading {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--clr-brown);
+    text-decoration: underline;
+}
+
+.about-me--content ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about_me_section {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .color_group {
+        grid-template-columns: 1fr;
+        /* One column */
+    }
+
+    /* about me section  */
+    .about_img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .about_description {
+        margin: 20px 0;
+        width: 90%;
+    }
+
+    .c-side-navbar {
+        background-color: #228B22;
+    }
+
+    .c-side-navbar a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .c-side-navbar ul {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .c-desktop-navbar.l-flex-separate.l-p-1 {
+        height: 50px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 0 20px;
+        color: red;
+    }
+
+    .my_heading {
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--clr-brown);
+        text-decoration: underline;
+    }
+
+    .about-me--content ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes'*/
+
+    .grid-sticky {
+        --header-height: 3.6rem;
+        display: grid;
+        grid-template-areas:
+            "topnav topnav"
+            "sidebar main"
+            "footer footer";
+        grid-template-columns: 10rem 1fr;
+        gap: 0;
+        margin-right: auto;
+        margin-left: auto;
+        isolation: isolate;
+    }
+
+    .topnav-sticky {
+        grid-area: topnav;
+        position: sticky;
+        background-color: var(--clr-brown);
+        color: white;
+        padding: 0 20px;
+        z-index: 10;
+        top: 0;
+        place-content: center;
+        height: var(--header-height);
+        border-bottom: 1px solid;
+    }
+
+    aside {
+        grid-area: sidebar;
+        position: relative;
+        z-index: 1;
+        border-right: 1px solid;
+    }
+
+    .sidebar-sticky {
+        position: sticky;
+        top: 3rem;
+    }
+
+    .sidebar-sticky li:hover {
+        background-color: var(--clr-green-100);
+        color: white;
+    }
+
+    .sidebar-sticky li a:hover {
+        color: white;
+    }
+
+    .active-side {
+        background-color: var(--clr-green-100);
+        color: white;
+    }
+
+    main {
+        grid-area: main;
+        min-height: 180vh;
+        padding: 1rem;
+    }
+
+    footer {
+        grid-area: footer;
+        display: grid;
+        place-content: center;
+        height: 5rem;
+        border-top: 1px solid;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+    }
+
+    /** STATES **/
+
+    /* Visibility */
+
+    .is-hidden-desktop {
+        display: none;
+    }
+
+    .is-visible-desktop {
+        display: initial;
+    }
+
+    /* Swatch for colours */
+
+    .c-swatch {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name-hex properties";
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .swatch-table {
+        border-collapse: separate;
+        border-spacing: 15px 5px;
+        justify-content: end;
+        min-width: 226.89px
+    }
+
+    .swatch-table tr {
+        padding: 0 10px
+    }
+
+    .name-hex {
+        grid-area: name-hex;
+        min-width: 301px
+    }
+
+    .properties {
+        grid-area: properties;
+    }
+
+    .l-grid-cols-2--desktop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .l-grid--desktop {
+        display: grid;
+    }
+
+    /* Top and side navigation for desktop */
+
+    aside {
+        background-color: var(--clr-green-200);
+        margin: 0;
+        padding: 0;
+    }
+
+    .c-desktop-navbar {
+        background-color: var(--clr-primary-40);
+    }
+
+    /* Containers */
+
+    .width-630-center--desktop {
+        max-width: 630px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .c-swatch {
+        min-width: 472px;
+        max-width: 650px;
+    }
+
+    /* Column layout */
+
+    .desktop-column-layout {
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid;
+        min-width: 100ch;
+        max-width: 150ch;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Layout for desktop */
+
+    .l-grid-row-12 {
+        grid-template-rows: 12em
+    }
+
+    .l-flex-desktop {
+        display: flex;
+    }
+
+    .l-flex-wrap-desktop {
+        flex-wrap: wrap;
+    }
+
+    /* Accordion Example */
+
+    .html-code__heading {
+        margin-top: 49rem;
+    }
+
+}

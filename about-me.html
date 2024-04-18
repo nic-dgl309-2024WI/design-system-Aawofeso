@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="design-system.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
 
-    <!-- Creating the top navbar -->
-    <div class="navbar bg-brown u-ff-calibri u-fs-18 u-fw-bold u-letter-spacing-02">
-      <div class="navbar__col-logo text-blue">
-      <h2 class="u-ff-calibri u-fs-30 u-fw-bold u-letter-spacing-07"><a href="design-system.html">Design System</a></h2>
-      </div>
-      <div class="navbar__col-list">
-          <ul class="col__list text-blue">
-              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->  
-              <div>
-                <a href="javascript:void(0);" id="iconi" class="topnav-hamburger--icon"><i class="fa fa-bars" onclick="openNav()"></i></a>
-              </a>
-            </div> 
-              <a href="about-me.html" class="active"><li>About Me</li></a>
-              <a href="#"><li>Demo Site</li></a>
-          </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-</div>
+<body>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+              <a class="c-desktop-menu__link " href="design-system.html">Design
+                System</a>
+              <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                <ul class="l-flex u-ff-sans-serif u-fs-small">
+                  <li class="c-desktop-menu__item is-active"><a class="c-desktop-menu__link l-pr-1" href="about-me.html">About Me</a>
+                  </li>
+                  <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="index.html" target="_blank">Demo
+                      Site</a></li>
+                </ul>
+              </nav>
+              <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+          </header>
+          <!-- Mobile nanvbar & Sidebar (for desktop)-->
+          <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+              <ul id="c-mobile-menu__first"
+                class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                </li>
+                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="index.html" target="_blank">Demo Site</a>
+                </li>
+              </ul>
+              <ul id="c-mobile-menu__second"
+                class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                <li class="c-sidemenu__item "><a class="c-sidemenu__link   c-mobile-menu__link"
+                    href="color.html">01
+                    Colours</a>
+                </li>
+                <li class="c-sidemenu__item "><a class="c-sidemenu__link c-mobile-menu__link" href="typography.html">02
+                    Typography</a></li>
+                <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">03
+                    Spacing</a></li>
+               <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                                  href="container.html">04
+                                  Containers</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05
+                    Images</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="interactive.html">06
+                    Interactive</a></li>
+                <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="navbar.html">07
+                    Navbars</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08
+                    Breadcrumbs</a></li>
+                <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="hero.html">09
+                    Hero</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="carousel.html">10
+                    Carousel</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="footer.html">11
+                    Footer</a>
+                </li>
+                <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="cards.html">12
+                    Cards</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="form.html">13
+                    Forms</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="accordion.html">14
+                    Accordion</a></li>
+              </ul>
+            </nav>
+          </aside>
 
-<!-- Creating the sidenav -->
-<div id="mySidenav" class="sidenav bg-blue text-secondary">
+        <main>
+            <section class="about_me_section">
+                <div class="about_me_top">
+                    <div class="about-me--head">
+                        <h1>Hi! My name is Abdulbasit Awofeso.</h1>
+                        <h2>I am a web developer.</h2>
+                    </div>
+                </div>
+                <div class="about_me_bottom">
+                    <img src="images/US PP.JPG" class="about_img" alt="Portrait of Abdulbasit">
+                    <div class="about-me--content u-ff-cambria">
+                        <p class="about_description">
+                            I'm from Nigeria, and I have a background in Information and
+                            Communications Technology (ICT). Currently, I'm enrolled in a Mobile
+                            Application Development program. In my free time, I enjoy playing
+                            football, and recently, I've discovered a new passion for snowboarding
+                        </p>
+                        <p class="my_heading">My favourite tools are</p>
+                        <ol>
+                            <li>Visual Studio Code</li>
+                            <li>GitHub</li>
+                            <li>Chrome Developer Tools</li>
+                        </ol>
+                        <p class="my_heading">My skills include</p>
+                        <ol>
+                            <li>Project Management</li>
+                            <li>Basic Understanding of Web Technologies</li>
+                            <li>Understanding of User Experience (UX) and User Interface (UI) Design Principles</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </section>
+    </main>
+    <footer>
+    </footer>
+    </div>
+    <script src="design-system.js"></script>
+</body>
 
-  <br><br><br>
-  <!-- showing the topnav links in the mobile version -->
-  <div class="sidenav__mobile text-secondary">
-      <a href="about-me.html"><li>About Me</li></a>
-      <a href="#"><li>Demo Site</li></a><br><br>
-  </div>
-
-<!-- Close button function -->
-
-<a href="javascript:void(0);" id="closeNav" class="closebtn text-secondary-200" onclick="myFunction(x,y); sideAni(x,y)"></a>
-<!-- Adding contents to sidenav -->
-<ul class="sidenav__list text-secondary">
-<a href="#"><strong>Branding</strong></a>
-<a href="colours.html"><li>Colours</li></a>
-<a href="typography.html"><li>Typography</li></a>
-<a href="#"><li>Logo</li></a>
-</ul><br>
-<ul class="sidenav__list text-secondary">
-    <a href="#"><strong>Utilities</strong></a>
-    <a href="spacing.html"><li>Spacing</li></a>
-    <a href="container.html"><li>Containers</li></a>
-    <a href="#"><li>Images</li></a>
-    <a href="#"><li>Interactive</li></a>
-    <a href="#"><li>Feedback</li></a>
-    </ul><br>
-    <ul class="sidenav__list text-secondary">
-        <a href="#"><strong>Navigation</strong></a>
-        <a href="#"><li>Navbars</li></a>
-        <a href="#"><li>Breadcrumbs</li></a>
-        <a href="#"><li>Pagination</li></a>
-        </ul><br>
-        <ul class="sidenav__list text-secondary">
-        <a href="#"><strong>Blocks</strong></a>
-        <a href="#"><li>Hero</li></a>
-        <a href="#"><li>Carousel</li></a>
-        <a href="#"><li>Slats</li></a>
-        <a href="#"><li>Footer</li></a>
-        </ul><br>
-        <ul class="sidenav__list text-secondary">
-            <a href="#"><strong>Components</strong></a>
-            <a href="#"><li>Cards</li></a>
-            <a href="#"><li>Forms</li></a>
-            <a href="#"><li>Accordion</li></a>
-            <a href="#"><li>Lists</li></a>
-            </ul><br><br><br><br><br><br><br><br><br>
-
-</div>
-<div href="javascript:void(0);" id="main" class="u-ff-cambria u-fs-18 u-fw-500 u-letter-spacing-02 " onclick="sideAni(x,y)">
-  <div class="about-me--card">
-    <div class="about-me--head">
-    <!-- add your name -->
-    <h3 >Hi! My name is Abdulbasit Awofeso.</h3>
-    <h4>I am a web developer.</h4>
-  </div>
-    <!-- add your portrait photo -->
-    <img
-      src="images/US PP.JPG"
-      alt="Portrait of Abdulbasit"
-      style="width: 300px; height: 300px"
-    />
-    <!-- add a short biography. Include where you are from, your education background, your current program, and something interesting about yourself. -->
-    <div class="about-me--content u-ff-cambria">
-    <p>
-      I'm from Nigeria, and I have a background in Information and
-      Communications Technology (ICT). Currently, I'm enrolled in a Mobile
-      Application Development program. In my free time, I enjoy playing
-      football, and recently, I've discovered a new passion for snowboarding
-    </p>
-    <!-- add a list of your favourite web development tools. -->
-    <p>My favourite tools are</p>
-    <ul>
-      <li>Visual Studio Code</li>
-      <li>GitHub</li>
-      <li>Chrome Developer Tools</li>
-    </ul>
-    <!-- add a list of your strongest web development skills. -->
-    <p>My skills include</p>
-    <ul>
-      <li>Project Management</li>
-      <li>Basic Understanding of Web Technologies</li>
-      <li>
-        Understanding of User Experience (UX) and User Interface (UI) Design
-        Principles
-      </li>
-    </ul>
-</div>
-</div>
-</div>
-    <script src="script.mjs"></script>
-  </body>
 </html>
