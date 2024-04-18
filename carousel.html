@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="design-system.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--Noto Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--hamburger icon-->
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <div class="grid-sticky border-right-1">
+                <header class="topnav-sticky">
+                        <!-- Top navbar (desktop)-->
+                        <div class="c-desktop-navbar l-flex-separate l-p-1">
+                          <a class="c-desktop-menu__link " href="design-system.html">Design
+                            System</a>
+                          <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                            <ul class="l-flex u-ff-sans-serif u-fs-small">
+                              <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1" href="about-me.html">About Me</a>
+                              </li>
+                              <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="index.html" target="_blank">Demo
+                                  Site</a></li>
+                            </ul>
+                          </nav>
+                          <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+                        </div>
+                      </header>
+                      <!-- Mobile nanvbar & Sidebar (for desktop)-->
+                      <aside>
+                        <nav class="c-side-navbar sidebar-sticky l-p-1">
+                          <ul id="c-mobile-menu__first"
+                            class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                            <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                            </li>
+                            <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="index.html" target="_blank">Demo Site</a>
+                            </li>
+                          </ul>
+                          <ul id="c-mobile-menu__second"
+                            class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                            <li class="c-sidemenu__item "><a class="c-sidemenu__link   c-mobile-menu__link"
+                                href="color.html">01
+                                Colours</a>
+                            </li>
+                            <li class="c-sidemenu__item "><a class="c-sidemenu__link c-mobile-menu__link" href="typography.html">02
+                                Typography</a></li>
+                            <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">03
+                                Spacing</a></li>
+                           <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                                              href="container.html">04
+                                              Containers</a></li>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05
+                                Images</a>
+                            </li>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="interactive.html">06
+                                Interactive</a></li>
+                            <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="navbar.html">07
+                                Navbars</a>
+                            </li>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08
+                                Breadcrumbs</a></li>
+                            <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="hero.html">09
+                                Hero</a>
+                            </li>
+                            <li class="c-sidemenu__item active-side"><a class="c-sidemenu__link c-mobile-menu__link" href="carousel.html">10
+                                Carousel</a></li>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="footer.html">11
+                                Footer</a>
+                            </li>
+                            <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="cards.html">12
+                                Cards</a>
+                            </li>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="form.html">13
+                                Forms</a>
+                            </li>
+                            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="accordion.html">14
+                                Accordion</a></li>
+                          </ul>
+                        </nav>
+                      </aside>
+
+                <main>
+                        <section class="side_body">
+                                <section class="n-content ds-content l-m l-p container-full-width">
+                                        <!--Top navbar (ON) (desktop view only) section-->
+                                        <h2 class="u-ff-heading u-fs-heading u-fw-bold text-accent l-mb-5 l-py-4">
+                                                Carousel Design</h2>
+
+                                        <img class="laptop-menu" src="images/carousel.png" alt="">
+
+                                        <div class="ds-code-snippet-container l-flex l-m l-p-4">
+                                                <pre><code>&lt;div class="slider slider--main"&gt;
+                                                                &lt;div class="slider__container"&gt;
+                                                                &lt;!-- Duplicate slides for infinite loop --&gt;
+                                                                &lt;div class="slider__item"&gt;
+                                                                &lt;img src="images/f1.jpg" alt="Image 1"
+                                                                class="slider__image"&gt;
+                                                                &lt;h3 class="slider__title"&gt;Fiddle Leaf
+                                                                Fig&lt;/h3&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div class="slider__item"&gt;
+                                                                &lt;img src="images/f2.jpg" alt="Image 2"
+                                                                class="slider__image"&gt;
+                                                                &lt;h3 class="slider__title"&gt;Monstera
+                                                                Deliciosa&lt;/h3&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div class="slider__item"&gt;
+                                                                &lt;img src="images/f3.jpg" alt="Image 3"
+                                                                class="slider__image"&gt;
+                                                                &lt;h3 class="slider__title"&gt;Snake Plant
+                                                                (Sansevieria)&lt;/h3&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div class="slider__item"&gt;
+                                                                &lt;img src="images/f4.jpg" alt="Image 4"
+                                                                class="slider__image"&gt;
+                                                                &lt;h3 class="slider__title"&gt;Pothos (Epipremnum
+                                                                aureum)&lt;/h3&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div class="slider__item"&gt;
+                                                                &lt;img src="images/f5.jpg" alt="Image 5"
+                                                                class="slider__image"&gt;
+                                                                &lt;h3 class="slider__title"&gt;Peace Lily
+                                                                (Spathiphyllum)&lt;/h3&gt;
+                                                                &lt;/div&gt;
+
+                                                                &lt;!-- Add more slider items as needed --&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;button class="slider__prev slider__control"
+                                                                onclick="prevSlide()"&gt;&#9664;&lt;/button&gt;
+                                                                &lt;button class="slider__next slider__control"
+                                                                onclick="nextSlide()"&gt;&#9654;&lt;/button&gt;
+                                                                &lt;div class="slider__dots"&gt;&lt;/div&gt;
+                                                                &lt;/div&gt;</code></pre>
+
+
+
+
+                                                <button class="ds-copy-btn" aria-label="Copy to clipboard"
+                                                        onclick="copyToClipboard(this)">Copy</button>
+                                        </div>
+
+                                </section>
+                        </section>
+        </div>
+        </section>
+        </main>
+        <footer>
+        </footer>
+        </div>
+        <script src="design-system.js"></script>
+</body>
+
+</html>
